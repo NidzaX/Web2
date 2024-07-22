@@ -11,27 +11,57 @@ namespace Taxi.Domain.Users
     {
         private User(Guid id,
             FirstName firstName,
-            LasttName lasttName,
-            Email email) : 
+            LastName lasttName,
+            Email email,
+            Username username,
+            Password password,
+            Address address,
+            Birthday birthday
+            ) : 
             base(id)
         {
             FirstName = firstName;
             LastName = lasttName;
             Email = email;
+            Username = username;
+            Password = password;
+            Address = address;
+            Birthday = birthday;
         }
 
         public FirstName FirstName { get; private set; }
 
-        public LasttName LastName { get; private set; }
+        public LastName LastName { get; private set; }
 
         public Email Email { get; private set; }
 
+        public Username Username { get; private set; }
+
+        public Password Password { get; private set; }
+
+        public Address Address { get; private set; }    
+
+        public Birthday Birthday { get; private set; }
+
+        public List<UserType> UserTypes { get; private set; } = new();
 
         public static User Create(FirstName firstName,
-            LasttName lastName,
-            Email email)
+            LastName lastName,
+            Email email,
+            Username username,
+            Password password,
+            Address address,
+            Birthday birthday)
         {
-            var user = new User(Guid.NewGuid(), firstName, lastName, email);
+            var user = new User(Guid.NewGuid(),
+                firstName,
+                lastName,
+                email,
+                username,
+                password,
+                address,
+                birthday);
+
 
             return user;
         }
