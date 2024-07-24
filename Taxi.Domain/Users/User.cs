@@ -16,7 +16,8 @@ namespace Taxi.Domain.Users
             Username username,
             Password password,
             Address address,
-            Birthday birthday
+            Birthday birthday,
+            Picture picture
             ) : 
             base(id)
         {
@@ -27,6 +28,12 @@ namespace Taxi.Domain.Users
             Password = password;
             Address = address;
             Birthday = birthday;
+            Picture = picture;
+        }
+
+        private User()
+        {
+
         }
 
         public FirstName FirstName { get; private set; }
@@ -45,13 +52,17 @@ namespace Taxi.Domain.Users
 
         public List<UserType> UserTypes { get; private set; } = new();
 
+        public Picture Picture { get; set; }
+
+
         public static User Create(FirstName firstName,
             LastName lastName,
             Email email,
             Username username,
             Password password,
             Address address,
-            Birthday birthday)
+            Birthday birthday,
+            Picture picture)
         {
             var user = new User(Guid.NewGuid(),
                 firstName,
@@ -60,7 +71,8 @@ namespace Taxi.Domain.Users
                 username,
                 password,
                 address,
-                birthday);
+                birthday,
+                picture);
 
 
             return user;

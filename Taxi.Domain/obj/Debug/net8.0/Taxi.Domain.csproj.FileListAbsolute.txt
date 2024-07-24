@@ -9,3 +9,4 @@ C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Domain\obj\Debug\net8.0\Taxi.Domain.dl
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Domain\obj\Debug\net8.0\refint\Taxi.Domain.dll
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Domain\obj\Debug\net8.0\Taxi.Domain.pdb
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Domain\obj\Debug\net8.0\ref\Taxi.Domain.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Domain\obj\Debug\net8.0\Taxi.Domain.csproj.AssemblyReference.cache

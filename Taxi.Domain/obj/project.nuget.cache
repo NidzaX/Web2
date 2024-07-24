@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pt3C+RzucMNyROYHv0rlxe0bosh5MT9FwgoNUiGHuEsjtXbu00PkT+4Mrg7cy8Ojv08/wVOHn66APN+iTSV4nA==",
+  "dgSpecHash": "Xe+8dYu+UB0nh/2UlNtwEYyNrf9D/gccoXRnawXlOsGaHTH69gK9NLYGC4J28lJG2AksxNFzlJqOFXMgtn9jWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Taxi.Domain\\Taxi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nidza\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
