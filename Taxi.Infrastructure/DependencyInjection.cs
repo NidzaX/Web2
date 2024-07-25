@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Taxi.Domain.Abstractions;
 using Taxi.Domain.Users;
 using Taxi.Infrastructure.Repositories;
 
@@ -12,6 +13,7 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
+
         var connectionString =
             configuration.GetConnectionString("Database") ??
             throw new ArgumentNullException(nameof(configuration));
@@ -21,6 +23,7 @@ public static class DependencyInjection
             options.UseNpgsql(connectionString).UseSnakeCaseNamingConvention();
         });
 
+        services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
         services.AddScoped<IUserRepository, UserRepository>();
         return services;
     }

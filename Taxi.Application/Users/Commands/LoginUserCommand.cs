@@ -2,6 +2,9 @@
 
 namespace Taxi.Application.Users.Commands
 {
-    public record LoginUserCommand(string Email, string Password) : ICommand<AccessTokenResponse>;
+    public record LoginUserCommand(
+        string Email,
+        string Password) 
+        : ICommand<AccessTokenResponse>;
    
 }

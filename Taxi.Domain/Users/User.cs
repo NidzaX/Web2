@@ -52,7 +52,7 @@ namespace Taxi.Domain.Users
 
         public List<UserType> UserTypes { get; private set; } = new();
 
-        public Picture Picture { get; set; }
+        public Picture? Picture { get; set; }
 
 
         public static User Create(FirstName firstName,
@@ -77,5 +77,7 @@ namespace Taxi.Domain.Users
 
             return user;
         }
+
+     
     }
 }

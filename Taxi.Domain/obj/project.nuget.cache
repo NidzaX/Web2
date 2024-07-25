@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Xe+8dYu+UB0nh/2UlNtwEYyNrf9D/gccoXRnawXlOsGaHTH69gK9NLYGC4J28lJG2AksxNFzlJqOFXMgtn9jWg==",
+  "dgSpecHash": "3+Iqd/iQ9t0q87BwDc2io2J/lz7C6I7BdIM7SkF3NC/HsbGfM2TT/PXma178eNN4fNCMMpylYjwBqnbmIe0W2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Taxi.Domain\\Taxi.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nidza\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\nidza\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
   ],
   "logs": []

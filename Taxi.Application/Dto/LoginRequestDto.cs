@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Taxi.Application.Dto
 {
-    public record LoginRequestDto(string username, string password) 
-    {
-
-
-
-    }
+    public record LoginRequestDto(
+        string username,
+        string password); 
+   
 }
