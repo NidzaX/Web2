@@ -62,10 +62,10 @@ namespace Taxi.Infrastructure.Migrations
                         .HasColumnType("bytea")
                         .HasColumnName("picture");
 
-                    b.Property<int[]>("UserTypes")
+                    b.Property<string>("UserType")
                         .IsRequired()
-                        .HasColumnType("integer[]")
-                        .HasColumnName("user_types");
+                        .HasColumnType("text")
+                        .HasColumnName("user_type");
 
                     b.Property<string>("Username")
                         .IsRequired()

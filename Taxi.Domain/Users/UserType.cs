@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace Taxi.Domain.Users
 {
-    public enum UserType
-    {
-        Administrator = 0,
-        User = 1,
-        Driver = 2
-    }
+    public record UserType(string Value);
+    
 }

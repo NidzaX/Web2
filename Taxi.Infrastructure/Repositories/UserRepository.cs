@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Data;
 using Taxi.Domain.Users;
 
 namespace Taxi.Infrastructure.Repositories
@@ -8,7 +9,7 @@ namespace Taxi.Infrastructure.Repositories
 
         public UserRepository(ApplicationDbContext dbContext) : base(dbContext) 
         { 
-        
+  
         }
 
         public async Task<User?> GetUserByEmailAsync(string email)

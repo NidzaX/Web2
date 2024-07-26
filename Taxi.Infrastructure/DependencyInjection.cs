@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Taxi.Domain.Abstractions;
+using Taxi.Domain.Review;
+using Taxi.Domain.Rides;
 using Taxi.Domain.Users;
 using Taxi.Infrastructure.Repositories;
 
@@ -25,6 +27,9 @@ public static class DependencyInjection
 
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IRideRepository, RideRepository>();
+        services.AddScoped<IReviewRepository, ReviewRepository>();
+
         return services;
     }
 }
