@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 namespace Taxi.Application.Dto
 {
     public record RegisterRequestDto(
-        string username,
-        string firstName,
-        string lastName,
-        string password,
-        string address,
-        DateTime birthday,
-        string userType,
-        string email,
-        string file);
+        string Username,
+        string FirstName,
+        string LastName,
+        string Password,
+        string Address,
+        DateTime Birthday,
+        string UserType,
+        string Email,
+        string File);
     
 }

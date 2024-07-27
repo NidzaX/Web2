@@ -1,4 +1,5 @@
 ﻿using Taxi.Application.Abstractions.Messaging;
+using Taxi.Application.Users.Shared;
 
 namespace Taxi.Application.Users.LogInUser
 {

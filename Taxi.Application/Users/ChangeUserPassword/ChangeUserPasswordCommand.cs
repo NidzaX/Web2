@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Taxi.Application.Abstractions.Messaging;
 using Taxi.Application.Dto;
+using ICommand = Taxi.Application.Abstractions.Messaging.ICommand;
 
 namespace Taxi.Application.Users.ChangeUserPassword
 {
-    internal sealed record ChangeUserPasswordCommand(
-        string Username,
+    public sealed record ChangeUserPasswordCommand(
+        string Email,
         string NewPassword,
-        string OldPassword) : ICommand<string>;
+        string OldPassword) : ICommand;
     
 }

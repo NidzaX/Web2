@@ -11,6 +11,6 @@ namespace Taxi.Domain.Users
     {
         Task<User?> GetUserByEmailAsync(string email);
         void Add(User user);
-
+        void Update(User user);
     }
 }

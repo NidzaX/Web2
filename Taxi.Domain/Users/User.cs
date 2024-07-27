@@ -56,6 +56,7 @@ namespace Taxi.Domain.Users
 
         public Picture? Picture { get; private set; }
 
+        public Verified Verified { get; private set; }
 
         public static User Create(FirstName firstName,
             LastName lastName,

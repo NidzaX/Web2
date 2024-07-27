@@ -7,6 +7,7 @@ using Taxi.Domain.Abstractions;
 using Taxi.Domain.Users;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using Taxi.Application.Users.Shared;
 
 namespace Taxi.Application.Users.LogInUser;
 

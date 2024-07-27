@@ -123,3 +123,9 @@ C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Microsoft.Identit
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\System.Management.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
