@@ -8,6 +8,7 @@ using Taxi.Application.Dto;
 using Taxi.Application.Users.ChangeUserPassword;
 using Taxi.Application.Users.Commands;
 using Taxi.Application.Users.LogInUser;
+using Taxi.Application.Users.VerifyDriver;
 using Taxi.Domain.Abstractions;
 
 namespace Taxi.Api.Controllers.Users
@@ -45,7 +46,8 @@ namespace Taxi.Api.Controllers.Users
                 registerRequestDto.Birthday,
                 registerRequestDto.UserType,
                 registerRequestDto.Email,
-                registerRequestDto.File);
+                registerRequestDto.File,
+                registerRequestDto.Verified);
 
             Result<Guid> result = await _sender.Send(command, cancellationToken);
 
@@ -59,7 +61,7 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpPost("registerGoogleUser")]
-        public async Task<IActionResult> RegisterGoogleUser([FromForm] RegisterUserGoogleDto dto, CancellationToken cancellationToken)
+        public async Task<IActionResult> RegisterGoogleUser([FromBody] RegisterUserGoogleDto dto, CancellationToken cancellationToken)
         {
             var command = new RegisterUserCommand(
                 dto.Username,
@@ -70,7 +72,8 @@ namespace Taxi.Api.Controllers.Users
                 dto.Birthday,
                 dto.UserType,
                 dto.Email,
-                dto.File);
+                dto.File,
+                dto.Verified);
 
             Result<Guid> result = await _sender.Send(command, cancellationToken);
 
@@ -83,7 +86,7 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpPost("loginGoogle")]
-        public async Task<IActionResult> LoginGoogleUser([FromForm] GoogleLoginDto dto, CancellationToken cancellationToken)
+        public async Task<IActionResult> LoginGoogleUser([FromBody] GoogleLoginDto dto, CancellationToken cancellationToken)
         {
             var command = new GoogleLoginDto(dto.Email, dto.Token);
 
@@ -108,12 +111,16 @@ namespace Taxi.Api.Controllers.Users
             return Ok(result.IsSuccess); 
         }
 
-        //[HttpPut("verify/{email}/{v}")]
-        //[Authorize(Roles = "admin")]
-        //public async Task<IActionResult> VerifyUser(string email, bool v)
-        //{
-        //    return Ok();
-        //}
+        [HttpPut("verify/{email}/{v}")]
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> VerifyUser([FromBody] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
+        {
+            var command = new VerifyDriverDto(verifyDriverDto.email, verifyDriverDto.v);
+
+            var result = await _sender.Send(command, cancellationToken);
+
+            return Ok();
+        }
 
 
     }

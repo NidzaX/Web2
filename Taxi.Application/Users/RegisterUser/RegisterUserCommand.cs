@@ -9,7 +9,7 @@ using Taxi.Application.Abstractions.Messaging;
 
 namespace Taxi.Application.Users.Commands
 {
-    public sealed record RegisterUserCommand(
+    public record RegisterUserCommand(
         string username,
         string firstName,
         string lastName,
@@ -18,6 +18,7 @@ namespace Taxi.Application.Users.Commands
         DateTime birthday,
         string userType,
         string email,
-        string file) : ICommand<Guid>;
+        string file,
+        bool Verified) : ICommand<Guid>;
     
 }

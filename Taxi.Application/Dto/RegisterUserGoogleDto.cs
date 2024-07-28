@@ -16,6 +16,7 @@ namespace Taxi.Application.Dto
         string UserType,
         string Email,
         string File,
+        bool Verified,
         string Token);
 
 }

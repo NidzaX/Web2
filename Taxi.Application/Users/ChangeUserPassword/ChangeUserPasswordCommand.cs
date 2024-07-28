@@ -10,7 +10,7 @@ using ICommand = Taxi.Application.Abstractions.Messaging.ICommand;
 
 namespace Taxi.Application.Users.ChangeUserPassword
 {
-    public sealed record ChangeUserPasswordCommand(
+    public record ChangeUserPasswordCommand(
         string Email,
         string NewPassword,
         string OldPassword) : ICommand;

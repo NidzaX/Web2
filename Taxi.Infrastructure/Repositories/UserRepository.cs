@@ -19,5 +19,13 @@ namespace Taxi.Infrastructure.Repositories
                 .FirstOrDefaultAsync(u => u.Email == new Email(email));
         }
 
+        public async Task<User?> GetUserByUsernameAsync(string username)
+        {
+            return await DbContext
+                .Set<User>()
+                .FirstOrDefaultAsync(user => user.Username == new Username(username));
+
+        }
+
     }
 }

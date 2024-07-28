@@ -57,7 +57,8 @@ namespace Taxi.Application.Users.Commands
                        new Address(request.address),
                        new Birthday(request.birthday),
                        new UserType(request.userType),
-                       null);
+                       null,
+                       new Verified(request.Verified));
 
 
             // using (var stream = new MemoryStream())

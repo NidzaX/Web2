@@ -26,14 +26,13 @@ namespace Taxi.Application.Users.GoogleLogin
 
         public GoogleLoginCommandHandler(
             IUserRepository userRepository,
-            IConfiguration configuration,
-            IConfigurationSection googleClientId,
-            IConfigurationSection secretKey)
+            IConfiguration configuration
+            )
         {
             _userRepository = userRepository;
             _configuration = configuration;
-            _googleClientId = googleClientId;
-            _secretKey = secretKey;
+            _googleClientId = configuration.GetSection("SecretKey");
+            _secretKey = configuration.GetSection("GoogleClientId"); 
         }
 
         public async Task<Result<AccessTokenResponse>> Handle(GoogleLoginCommand request, CancellationToken cancellationToken)

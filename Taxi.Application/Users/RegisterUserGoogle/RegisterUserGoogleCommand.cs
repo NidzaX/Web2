@@ -8,7 +8,7 @@ using Taxi.Application.Abstractions.Messaging;
 
 namespace Taxi.Application.Users.RegisterUserGoogle
 {
-    public sealed record RegisterUserGoogleCommand(
+    public record RegisterUserGoogleCommand(
         string Username,
         string FirstName,
         string LastName,
@@ -18,5 +18,6 @@ namespace Taxi.Application.Users.RegisterUserGoogle
         string UserType,
         string Email,
         string File,
+        bool Verified,
         string Token) : ICommand<Guid>;
 }

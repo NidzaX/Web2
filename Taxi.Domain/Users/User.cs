@@ -18,7 +18,8 @@ namespace Taxi.Domain.Users
             Address address,
             Birthday birthday,
             UserType userType,
-            Picture picture
+            Picture picture,
+            Verified verified
             ) : 
             base(id)
         {
@@ -31,6 +32,7 @@ namespace Taxi.Domain.Users
             Birthday = birthday;
             UserType = userType;
             Picture = picture;
+            Verified = verified;
         }
 
         private User()
@@ -46,7 +48,7 @@ namespace Taxi.Domain.Users
 
         public Username Username { get; private set; }
 
-        public Password Password { get; private set; }
+        public Password Password { get; set; }
 
         public Address Address { get; private set; }    
 
@@ -66,7 +68,8 @@ namespace Taxi.Domain.Users
             Address address,
             Birthday birthday,
             UserType userType,
-            Picture picture)
+            Picture picture,
+            Verified verified)
         {
             var user = new User(Guid.NewGuid(),
                 firstName,
@@ -77,7 +80,8 @@ namespace Taxi.Domain.Users
                 address,
                 birthday,
                 userType,
-                picture);
+                picture,
+                verified);
 
 
             return user;

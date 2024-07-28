@@ -11,7 +11,7 @@ using Taxi.Domain.Users;
 
 namespace Taxi.Application.Users.ChangeUserPassword
 {
-    internal class ChangeUserPasswordCommandHandler : ICommandHandler<ChangeUserPasswordCommand>
+    internal sealed class ChangeUserPasswordCommandHandler : ICommandHandler<ChangeUserPasswordCommand>
     {
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -27,6 +27,7 @@ namespace Taxi.Application.Users.ChangeUserPassword
         public async Task<Result> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
         {
             User? user = await _userRepository.GetUserByEmailAsync(request.Email);
+            var hashPassword = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
 
             if (user == null)
             {
@@ -35,8 +36,8 @@ namespace Taxi.Application.Users.ChangeUserPassword
 
             if (BCrypt.Net.BCrypt.Verify(request.OldPassword, user.Password.Value))
             {
-               
-            //? user.Password.Value = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+
+                 user.Password =  new Password(hashPassword);
 
                 _userRepository.Update(user);
 

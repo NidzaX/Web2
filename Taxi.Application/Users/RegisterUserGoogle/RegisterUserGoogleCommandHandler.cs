@@ -25,12 +25,12 @@ namespace Taxi.Application.Users.RegisterUserGoogle
         IAuthenticationService authenticationService,
         IUserRepository userRepository,
         IUnitOfWork unitOfWork,
-        IConfigurationSection googleClientId)
+        IConfiguration config)
         {
             _authenticationService = authenticationService;
             _userRepository = userRepository;
             _unitOfWork = unitOfWork;
-            _googleClientId = googleClientId;
+            _googleClientId = config.GetSection("GoogleClientId");
         }
 
         /*
@@ -79,7 +79,9 @@ namespace Taxi.Application.Users.RegisterUserGoogle
                        new Address(request.Address),
                        new Birthday(request.Birthday),
                        new UserType(request.UserType),
-                       null);
+                       null,
+                       new Verified(request.Verified)
+                       );
 
 
             // using (var stream = new MemoryStream())

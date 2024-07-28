@@ -34,7 +34,10 @@ namespace Taxi.Infrastructure.Configurations
               .HasConversion(birthday => birthday.Value, value => new Birthday(value));
             builder.Property(user => user.Picture)
               .HasConversion(picture => picture.Value, value => new Picture(value));
-            builder.Property(user => user.UserType).IsRequired();
+            builder.Property(user => user.UserType).IsRequired()
+                .HasConversion(usertType => usertType.Value, value=> new UserType(value));
+            builder.Property(user => user.Verified).IsRequired()
+                .HasConversion(verified => verified.Value, value => new Verified(value));
 
             builder.HasIndex(user => user.Email).IsUnique();
             builder.HasIndex(user => user.Username).IsUnique();
