@@ -61,5 +61,10 @@ namespace Taxi.Infrastructure
                 await _publisher.Publish(domainEvent);
             }
         }
+
+        //internal void Find<T>(T entity) where T : Entity
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

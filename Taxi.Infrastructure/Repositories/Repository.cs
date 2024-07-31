@@ -41,5 +41,6 @@ namespace Taxi.Infrastructure.Repositories
         {
             DbContext.Update(entity);
         }
+
     }
 }

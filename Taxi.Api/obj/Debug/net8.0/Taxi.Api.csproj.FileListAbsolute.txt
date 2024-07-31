@@ -129,3 +129,5 @@ C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Google.Apis.Core.
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\System.Management.dll
 C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Taxi.Api\bin\Debug\net8.0\RestSharp.dll

@@ -26,6 +26,5 @@ namespace Taxi.Infrastructure.Repositories
                 .FirstOrDefaultAsync(user => user.Username == new Username(username));
 
         }
-
     }
 }

@@ -40,25 +40,25 @@ namespace Taxi.Domain.Users
 
         }
 
-        public FirstName FirstName { get; private set; }
+        public FirstName FirstName { get; set; }
 
-        public LastName LastName { get; private set; }
+        public LastName LastName { get; set; }
 
-        public Email Email { get; private set; }
+        public Email Email { get;  set; }
 
-        public Username Username { get; private set; }
+        public Username Username { get;  set; }
 
         public Password Password { get; set; }
 
-        public Address Address { get; private set; }    
+        public Address Address { get;  set; }    
 
-        public Birthday Birthday { get; private set; }
+        public Birthday Birthday { get;  set; }
 
-        public UserType UserType { get; private set; } 
+        public UserType UserType { get;  set; } 
 
-        public Picture? Picture { get; private set; }
+        public Picture? Picture { get;  set; }
 
-        public Verified Verified { get; private set; }
+        public Verified Verified { get;  set; }
 
         public static User Create(FirstName firstName,
             LastName lastName,

@@ -84,12 +84,12 @@ namespace Taxi.Application.Users.RegisterUserGoogle
                        );
 
 
-            // using (var stream = new MemoryStream())
-            //  {
-            //     request.file.CopyTo(stream);
-            //      user.Picture = stream.ToArray();
+            //using (var stream = new MemoryStream())
+            //{
+            //    request.File.CopyTo(stream);
+            //    user.Picture = stream.ToArray();
 
-            //  }
+            //}
 
 
 

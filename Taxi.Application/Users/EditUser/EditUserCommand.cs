@@ -18,8 +18,7 @@ namespace Taxi.Application.Users.EditUser
         DateTime Birthday,
         string UserType,
         string Email,
-        string File,
-        bool Verified
+        string File
         ) : ICommand;
 
 }

@@ -7,9 +7,13 @@ using System.Threading;
 using Taxi.Application.Dto;
 using Taxi.Application.Users.ChangeUserPassword;
 using Taxi.Application.Users.Commands;
+using Taxi.Application.Users.EditUser;
+using Taxi.Application.Users.GetUser;
+using Taxi.Application.Users.GoogleLogin;
 using Taxi.Application.Users.LogInUser;
 using Taxi.Application.Users.VerifyDriver;
 using Taxi.Domain.Abstractions;
+using Taxi.Domain.Users;
 
 namespace Taxi.Api.Controllers.Users
 {
@@ -88,11 +92,17 @@ namespace Taxi.Api.Controllers.Users
         [HttpPost("loginGoogle")]
         public async Task<IActionResult> LoginGoogleUser([FromBody] GoogleLoginDto dto, CancellationToken cancellationToken)
         {
-            var command = new GoogleLoginDto(dto.Email, dto.Token);
+            var command = new GoogleLoginCommand(dto.Email, dto.Token);
 
             var result = await _sender.Send(command, cancellationToken);
 
-            return Ok(); // ????
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.IsSuccess);
+
         }
 
         [HttpPut("changePassword")]
@@ -108,20 +118,62 @@ namespace Taxi.Api.Controllers.Users
                 return BadRequest(result.Error);
             }
 
-            return Ok(result.IsSuccess); 
+            return Ok(result.IsSuccess);
+        }
+
+        [HttpPut("updateProfile")]
+        public async Task<IActionResult> UpdateProfile([FromBody] UserEditDto dto, CancellationToken cancellationToken)
+        {
+            var command = new EditUserCommand(
+                dto.Username,
+                dto.FirstName,
+                dto.LastName,
+                dto.Password,
+                dto.Address,
+                dto.Birthday,
+                dto.UserType,
+                dto.Email,
+                dto.File);
+
+            var result = await _sender.Send(command, cancellationToken);
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.IsSuccess);
         }
 
         [HttpPut("verify/{email}/{v}")]
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> VerifyUser([FromBody] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
         {
-            var command = new VerifyDriverDto(verifyDriverDto.email, verifyDriverDto.v);
+            var command = new VerifyDriverCommand(verifyDriverDto.email, verifyDriverDto.v);
 
             var result = await _sender.Send(command, cancellationToken);
 
-            return Ok();
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.IsSuccess);
         }
 
+        [HttpGet("getUserData/{email}")]
+        public async Task<IActionResult> GetUserData(string email, CancellationToken cancellationToken)
+        {
+            var query = new GetUserQuery(email);
 
+            Result<GetUserDto> result = await _sender.Send(query, cancellationToken);
+
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+
+            }
+            return Ok(result.IsSuccess);
+
+        }
     }
 }

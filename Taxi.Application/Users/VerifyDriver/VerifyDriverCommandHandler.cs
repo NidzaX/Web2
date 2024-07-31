@@ -33,7 +33,7 @@ namespace Taxi.Application.Users.VerifySeller
                 throw new Exception("Invalid data");
             }
 
-            //user.Verified.Value = request.v; ??
+            user.Verified = new Verified(request.v); 
 
             MailMessage message = new MailMessage();
             message.From = new MailAddress("web2projekatadm@gmail.com");

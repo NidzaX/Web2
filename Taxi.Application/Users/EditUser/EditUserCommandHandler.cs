@@ -25,28 +25,38 @@ namespace Taxi.Application.Users.EditUser
 
             User? user = await _userRepository.GetUserByEmailAsync(request.Email);
 
-            //if (user == null)
-            //{
+            if (user == null)
+            {
 
-            //    throw new Exception("The user does not exist");
-            //}
+                throw new Exception("the user does not exist");
+            }
+            //string Username,
+            //string FirstName,
+            //string LastName,
+            //string Password,
+            //string Address,
+            //DateTime Birthday,
+            //string UserType,
+            //string Email,
+            //string File,
+            //bool Verified
 
-            // user.FirstName.Value = request.FirstName;
+            user.Username = new Username(request.Username);
+            user.FirstName = new FirstName(request.FirstName);
+            user.LastName = new LastName(request.LastName);
+            user.Password = new Password(request.Password);
+            user.Address = new Address(request.Address);
+            user.Birthday = new Birthday(request.Birthday);
+            user.UserType = new UserType(request.UserType);
+            user.Email = new Email(request.Email);
+            //user.Picture = new Picture(request.File);
 
+            _userRepository.Update(user);
 
-           //user = User.Create(
-           //            new FirstName(request.firstName),
-           //            new LastName(request.lastName),
-           //            new Email(request.email),
-           //            new Username(request.username),
-           //            new Password(hashPassword),
-           //            new Address(request.address),
-           //            new Birthday(request.birthday),
-           //            new UserType(request.userType),
-           //            null,
-           //            new Verified(request.Verified));
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            throw new NotImplementedException();
+            return Result.Success();
+
         }
     }
 }

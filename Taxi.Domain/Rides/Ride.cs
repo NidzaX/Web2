@@ -33,9 +33,11 @@ namespace Taxi.Domain.Rides
         public string StartAddress { get; private set; }
         
         public string EndAddress { get; private set;}
+
+          
     }
 
-
+    
 
 
     

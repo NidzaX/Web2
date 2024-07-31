@@ -19,6 +19,17 @@
           "Taxi.Api.dll": {}
         }
       },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
+        }
+      },
       "BCrypt.Net-Next/4.0.3": {
         "runtime": {
           "lib/net6.0/BCrypt.Net-Next.dll": {
@@ -611,6 +622,14 @@
           }
         }
       },
+      "RestSharp/111.4.1": {
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "assemblyVersion": "111.4.1.0",
+            "fileVersion": "111.4.1.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -780,6 +799,7 @@
       "System.Threading.Channels/6.0.0": {},
       "Taxi.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "BCrypt.Net-Next": "4.0.3",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
           "Google.Apis.Auth": "1.68.0",
@@ -797,7 +817,9 @@
       "Taxi.Domain/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
-          "MediatR.Contracts": "2.0.1"
+          "MediatR.Contracts": "2.0.1",
+          "Newtonsoft.Json": "13.0.3",
+          "RestSharp": "111.4.1"
         },
         "runtime": {
           "Taxi.Domain.dll": {}
@@ -822,6 +844,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "BCrypt.Net-Next/4.0.3": {
       "type": "package",
@@ -1158,6 +1187,13 @@
       "sha512": "sha512-/hHd9MqTRVDgIpsToCcxMDxZqla0HAQACiITkq1+L9J2hmHKV6lBAPlauF+dlNSfHpus7rrljWx4nAanKD6qAw==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
+    },
+    "RestSharp/111.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MhrBdwqYd+ezd3xD+c6eaAVcLJoWI+2TBH7rqX149nbYRkPJJfK/UbrgJVfKN9ZMehOFzo2PmKIZjS1ATnxEAQ==",
+      "path": "restsharp/111.4.1",
+      "hashPath": "restsharp.111.4.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",
