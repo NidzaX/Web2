@@ -21,7 +21,7 @@ namespace Taxi.Api.Controllers.Reviews
         [HttpPost]
         public async Task<IActionResult> AddReview(AddReviewRequest request, CancellationToken cancellationToken)
         {
-            var command = new AddReviewCommand(request.UserEmail, request.RiderId, request.Rating, request.Comment);
+            var command = new AddReviewCommand(request.UserEmail, request.DriverId, request.Rating, request.Comment);
 
             Result result = await _sender.Send(command, cancellationToken);
 

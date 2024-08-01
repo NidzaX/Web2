@@ -9,7 +9,7 @@ namespace Taxi.Application.Reviews.AddReview
 {
     public sealed record AddReviewCommand(
         string UserEmail,
-        Guid RiderId,
+        Guid DriverId,
         int Rating,
         string Comment) : ICommand;
 

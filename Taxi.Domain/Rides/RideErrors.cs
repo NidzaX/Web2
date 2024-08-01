@@ -9,13 +9,17 @@ namespace Taxi.Domain.Rides
 {
     public static class RideErrors
     {
-        public static readonly Error NotFount = new(
-            "Ride.Error",
-            "The ride with the specified identifier was not found");
+        public static readonly Error NotFound = new(
+            "Ride.Found",
+            "The Ride with the specified identifier was not found");
 
-        public static readonly Error AlredyStarted = new(
-            "Ride.AlredyStarted",
-            "The ride has alredy started");
+        public static readonly Error NotReserved = new(
+            "Ride.NotReserved",
+            "The Ride is not pending");
+
+        public static readonly Error NotConfirmed = new(
+            "Ride.NotReserved",
+            "The Ride is not confirmed");
 
     }
 }

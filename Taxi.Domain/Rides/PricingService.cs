@@ -13,14 +13,14 @@ namespace Taxi.Domain.Rides
     {
         private const string ApiKey = "pk.efbcae8c5d9dcd6bc03125912d8a6d4b";
 
-        public static double CalculatePrice(string startAddress, string endAddress)
+        public double CalculatePrice(string startAddress, string endAddress)
         {
             double distance = GetDistance(startAddress, endAddress);
             double price = GeneratePrice(distance);
             return price;
         }
 
-        private static double GetDistance(string startAddress, string endAddress)
+        private double GetDistance(string startAddress, string endAddress)
         {
             string startCoordinates = GetCoordinates(startAddress);
             string endCoordinates = GetCoordinates(endAddress);
@@ -50,7 +50,7 @@ namespace Taxi.Domain.Rides
 
 
 
-        private static string GetCoordinates(string address)
+        private string GetCoordinates(string address)
         {
             var client = new RestClient($"https://us1.locationiq.com/v1/search.php?key={ApiKey}&q={Uri.EscapeDataString(address)}&format=json");
             var request = new RestRequest();
@@ -72,7 +72,7 @@ namespace Taxi.Domain.Rides
             }
         }
 
-        private static double GeneratePrice(double distance)
+        private double GeneratePrice(double distance)
         {
             // Example price calculation: Base fare + distance rate
             double baseFare = 5.00; // Base fare in currency units
@@ -81,7 +81,7 @@ namespace Taxi.Domain.Rides
             return baseFare + (ratePerKm * distance);
         }
 
-        public static double PredictWaitingTime(string startAddress, string endAddress)
+        public double PredictWaitingTime(string startAddress, string endAddress)
         {
             double distance = GetDistance(startAddress, endAddress);
 

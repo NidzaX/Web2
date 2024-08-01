@@ -10,6 +10,8 @@ namespace Taxi.Domain.Rides
     {
         Cancelled = 0,
         Confirmed = 1,
-        Completed = 2
+        Completed = 2,
+        Reserved = 3,
+        Rejected = 4
     }
 }
