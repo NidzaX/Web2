@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,8 +16,33 @@ namespace Taxi.Api.Controllers.Rides
             _sender = sender;
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> S
+        //[HttpPost("addRide")]
+        //[Authorize(Roles = "driver")]
+        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
+        //{
+        //    return Ok();
+        //}
+
+        //[HttpGet("getAllRides")]
+        //[Authorize(Roles = "admin")]
+        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
+        //{
+        //    return Ok();
+        //}
+
+        //[HttpPost("addRides")]
+        //[Authorize(Roles = "driver")]
+        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
+        //{
+        //    return Ok();
+        //}
+
+        //[HttpPost("getAllRidesUser")]
+        //[Authorize(Roles = "user")]
+        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
+        //{
+        //    return Ok();
+        //}
 
     }
 }

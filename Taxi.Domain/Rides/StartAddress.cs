@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Taxi.Application.Dto
+namespace Taxi.Domain.Rides
 {
-    public record AddRideDto(
-        );
+    public record StartAddress(string Value);
 
 }

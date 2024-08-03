@@ -8,10 +8,10 @@ namespace Taxi.Domain.Rides
         private Ride(Guid id,
                     Guid userId,
                     Guid driverId,
-                    double price,
-                    double predictedTime,
-                    string startAddress,
-                    string endAddress,
+                    Price price,
+                    PredictedTime predictedTime,
+                    StartAddress startAddress,
+                    EndAddress endAddress,
                     RideStatus rideStatus,
                     DateTime createdOnUtc) 
             : base(id)
@@ -35,12 +35,13 @@ namespace Taxi.Domain.Rides
 
         public Guid DriverId { get; private set; }
 
-        public double Price { get; private set; }
-        public double PredictedTime { get; private set; }
+        public Price Price { get; private set; }
 
-        public string StartAddress { get; private set; }
+        public PredictedTime PredictedTime { get; private set; }
+
+        public StartAddress StartAddress { get; private set; }
         
-        public string EndAddress { get; private set;}
+        public EndAddress EndAddress { get; private set;}
 
         public DateTime CreatedOnUtc { get; private set; }
 
@@ -57,20 +58,20 @@ namespace Taxi.Domain.Rides
         public static Ride Reserve(
             Guid userId,
             Guid driverId,
-            string startAddress,
-            string endAddress,
+            StartAddress startAddress,
+            EndAddress endAddress,
             PricingService pricingService,
             DateTime utcNow)
         {
-            double price = pricingService.CalculatePrice(startAddress, endAddress);
-            double predictedTime = pricingService.PredictWaitingTime(startAddress, endAddress);
+            double price = pricingService.CalculatePrice(startAddress.Value, endAddress.Value);
+            double predictedTime = pricingService.PredictWaitingTime(startAddress.Value, endAddress.Value);
 
             var ride = new Ride(
                 Guid.NewGuid(),
                 userId,
                 driverId,
-                price,
-                predictedTime,
+                new Price(price),
+                new PredictedTime(predictedTime),
                 startAddress,
                 endAddress,
                 RideStatus.Reserved,
