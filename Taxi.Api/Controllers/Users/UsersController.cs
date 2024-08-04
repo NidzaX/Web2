@@ -39,7 +39,7 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequestDto registerRequestDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> Register([FromForm] RegisterRequestDto registerRequestDto, CancellationToken cancellationToken)
         {
             var command = new RegisterUserCommand(
                 registerRequestDto.Username,
@@ -50,8 +50,7 @@ namespace Taxi.Api.Controllers.Users
                 registerRequestDto.Birthday,
                 registerRequestDto.UserType,
                 registerRequestDto.Email,
-                registerRequestDto.File,
-                registerRequestDto.Verified);
+                registerRequestDto.File);
 
             Result<Guid> result = await _sender.Send(command, cancellationToken);
 
@@ -65,7 +64,7 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpPost("registerGoogleUser")]
-        public async Task<IActionResult> RegisterGoogleUser([FromBody] RegisterUserGoogleDto dto, CancellationToken cancellationToken)
+        public async Task<IActionResult> RegisterGoogleUser([FromForm] RegisterUserGoogleDto dto, CancellationToken cancellationToken)
         {
             var command = new RegisterUserCommand(
                 dto.Username,
@@ -76,8 +75,7 @@ namespace Taxi.Api.Controllers.Users
                 dto.Birthday,
                 dto.UserType,
                 dto.Email,
-                dto.File,
-                dto.Verified);
+                dto.File);
 
             Result<Guid> result = await _sender.Send(command, cancellationToken);
 
@@ -146,7 +144,7 @@ namespace Taxi.Api.Controllers.Users
 
         [HttpPut("verify/{email}/{v}")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> VerifyUser([FromBody] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> VerifyUser([FromForm] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
         {
             var command = new VerifyDriverCommand(verifyDriverDto.email, verifyDriverDto.v);
 
@@ -173,7 +171,22 @@ namespace Taxi.Api.Controllers.Users
 
             }
             return Ok(result.IsSuccess);
-
         }
+
+        //[HttpGet("getDriverData/{email}")]
+        //public async Task<IActionResult> GetDriverData(string email, CancellationToken cancellationToken)
+        //{
+        //    var query = new GetUserQuery(email);
+
+        //    Result<GetUserDto> result = await _sender.Send(query, cancellationToken);
+
+        //    if (result.IsFailure)
+        //    {
+        //        return BadRequest(result.Error);
+
+        //    }
+        //    return Ok(result.IsSuccess);
+
+        //}
     }
 }

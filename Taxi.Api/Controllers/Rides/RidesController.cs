@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Taxi.Application.Dto;
+using Taxi.Application.Rides.CreateRide;
+using Taxi.Application.Rides.ReserveRide;
+using Taxi.Domain.Abstractions;
 
 namespace Taxi.Api.Controllers.Rides
 {
@@ -16,12 +20,45 @@ namespace Taxi.Api.Controllers.Rides
             _sender = sender;
         }
 
-        //[HttpPost("addRide")]
-        //[Authorize(Roles = "driver")]
-        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
-        //{
-        //    return Ok();
-        //}
+        [HttpPost("createRide")]
+        [Authorize(Roles = "driver")]
+        public async Task<IActionResult> CreateRide([FromBody] CreateRideDto dto, CancellationToken cancellationToken)
+        {
+            var command = new CreateRideCommand(
+                dto.userId,
+                dto.driverId,
+                dto.startAddress,
+                dto.endAddress,
+                dto.PricingService,
+                dto.createdOnUtc);
+
+            Result<Guid> result = await _sender.Send(command, cancellationToken);
+
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpPost("reserveRide")]
+        [Authorize(Roles = "driver")]
+        public async Task<IActionResult> ReserveRide([FromBody] ReserveRideDto dto, CancellationToken cancellationToken)
+        {
+            var command = new ReserveDriverCommand(
+                dto.RideId,
+                dto.PricingService);
+
+            Result<Guid> result = await _sender.Send(command, cancellationToken);
+
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
 
         //[HttpGet("getAllRides")]
         //[Authorize(Roles = "admin")]
@@ -42,7 +79,6 @@ namespace Taxi.Api.Controllers.Rides
         //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
         //{
         //    return Ok();
-        //}
-
+        //}p
     }
 }

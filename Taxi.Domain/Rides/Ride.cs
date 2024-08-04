@@ -31,55 +31,75 @@ namespace Taxi.Domain.Rides
 
         }
 
-        public Guid UserId { get; private set; }
+        public Guid UserId { get; set; }
 
-        public Guid DriverId { get; private set; }
+        public Guid DriverId { get; set; }
 
-        public Price Price { get; private set; }
+        public Price Price { get; set; }
 
-        public PredictedTime PredictedTime { get; private set; }
+        public PredictedTime PredictedTime { get; set; }
 
-        public StartAddress StartAddress { get; private set; }
+        public StartAddress StartAddress { get; set; }
         
-        public EndAddress EndAddress { get; private set;}
+        public EndAddress EndAddress { get; set;}
 
-        public DateTime CreatedOnUtc { get; private set; }
+        public DateTime CreatedOnUtc { get; set; }
 
-        public RideStatus Status { get; private set; }
+        public RideStatus Status { get; set; }
 
-        public DateTime? CancelledOnUtc { get; private set; }
+        public DateTime? CancelledOnUtc { get; set; }
 
-        public DateTime? ConfirmedOnUtc { get; private set; }
+        public DateTime? ConfirmedOnUtc { get; set; }
 
-        public DateTime? CompletedOnUtc { get; private set; }
+        public DateTime? CompletedOnUtc { get; set; }
 
-        public DateTime? RejectedOnUtc { get; private set; }
+        public DateTime? RejectedOnUtc { get; set; }
 
-        public static Ride Reserve(
-            Guid userId,
-            Guid driverId,
-            StartAddress startAddress,
-            EndAddress endAddress,
-            PricingService pricingService,
-            DateTime utcNow)
+        public static (Ride ride, double price) Create(
+           Guid userId,
+           Guid driverId,
+           StartAddress startAddress,
+           EndAddress endAddress,
+           PricingService pricingService,
+           DateTime utcNow)
         {
             double price = pricingService.CalculatePrice(startAddress.Value, endAddress.Value);
-            double predictedTime = pricingService.PredictWaitingTime(startAddress.Value, endAddress.Value);
+            double pickUpTime = pricingService.EstimatePickupTime();
 
             var ride = new Ride(
                 Guid.NewGuid(),
                 userId,
                 driverId,
                 new Price(price),
-                new PredictedTime(predictedTime),
+                new PredictedTime(pickUpTime),
                 startAddress,
                 endAddress,
-                RideStatus.Reserved,
+                RideStatus.Created,
                 utcNow);
 
-            ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
+          //  ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
+
+            return (ride, price);
+        }
+
+
+        public static Ride Reserve(
+            Ride ride,
+            PricingService pricingService)
+        {
+            double waitingTime = pricingService.EstimatePickupTime();
+
+            ride.UpdateWaitingTimeAndStatus(waitingTime, RideStatus.Reserved);
+            
+            //ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
 
             return ride;
+        }
+
+        public void UpdateWaitingTimeAndStatus(double waitingTime, RideStatus status)
+        {
+            PredictedTime = new PredictedTime(waitingTime);
+            Status = status;
         }
 
         public Result Confirm(DateTime utcNow)

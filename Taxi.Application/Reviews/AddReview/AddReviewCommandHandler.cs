@@ -53,7 +53,7 @@ namespace Taxi.Application.Reviews.AddReview
             {
                 Result<Review> reviewResult = Review.Create(
                     user.Id,
-                    ride.Id,
+                    ride.DriverId,
                     ratingResult.Value,
                     new Comment(request.Comment));
 

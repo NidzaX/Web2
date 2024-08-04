@@ -9,8 +9,7 @@ namespace Taxi.Domain.Rides
     public interface IRideRepository
     {
         Task<Ride?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
-
         void Add(Ride rides);
-
+        void Update(Ride rides);
     }
 }

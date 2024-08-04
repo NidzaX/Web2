@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Taxi.Application.Abstractions.Messaging;
 using Taxi.Domain.Abstractions;
@@ -30,16 +32,6 @@ namespace Taxi.Application.Users.EditUser
 
                 throw new Exception("the user does not exist");
             }
-            //string Username,
-            //string FirstName,
-            //string LastName,
-            //string Password,
-            //string Address,
-            //DateTime Birthday,
-            //string UserType,
-            //string Email,
-            //string File,
-            //bool Verified
 
             user.Username = new Username(request.Username);
             user.FirstName = new FirstName(request.FirstName);
@@ -49,14 +41,17 @@ namespace Taxi.Application.Users.EditUser
             user.Birthday = new Birthday(request.Birthday);
             user.UserType = new UserType(request.UserType);
             user.Email = new Email(request.Email);
-            //user.Picture = new Picture(request.File);
+            using (var stream = new MemoryStream())
+            {
+                request.File.CopyTo(stream);
+                user.Picture = new Picture(stream.ToArray());
+            }
 
             _userRepository.Update(user);
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
             return Result.Success();
-
         }
     }
 }

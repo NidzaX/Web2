@@ -39,6 +39,7 @@ namespace Taxi.Infrastructure.Configurations
             builder.Property(user => user.Verified).IsRequired()
                 .HasConversion(verified => verified.Value, value => new Verified(value));
 
+
             builder.HasIndex(user => user.Email).IsUnique();
             builder.HasIndex(user => user.Username).IsUnique();
         }

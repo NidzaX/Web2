@@ -21,5 +21,8 @@ namespace Taxi.Domain.Rides
             "Ride.NotReserved",
             "The Ride is not confirmed");
 
+        public static readonly Error AlredyExists = new(
+           "Ride.AlredyExists",
+           "The Ride alredy exists");
     }
 }

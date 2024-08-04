@@ -18,7 +18,6 @@ namespace Taxi.Application.Users.Commands
         DateTime birthday,
         string userType,
         string email,
-        string file,
-        bool Verified) : ICommand<Guid>;
+        IFormFile file) : ICommand<Guid>;
     
 }

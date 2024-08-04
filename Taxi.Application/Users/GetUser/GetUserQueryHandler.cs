@@ -31,9 +31,14 @@ namespace Taxi.Application.Users.GetUser
             {
                 throw new Exception("User does not exist");
             }
+            
+            if(user.UserType.Value == "user")
+            {
+                return _mapper.Map<GetUserDto>(user);
 
-            return _mapper.Map<GetUserDto>(user);
-                
+            }
+
+            throw new Exception("Ne mere"); // testing testing 123
         }
     }
 }

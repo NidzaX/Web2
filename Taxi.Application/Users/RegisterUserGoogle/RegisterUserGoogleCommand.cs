@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,6 @@ namespace Taxi.Application.Users.RegisterUserGoogle
         DateTime Birthday,
         string UserType,
         string Email,
-        string File,
-        bool Verified,
+        IFormFile File,
         string Token) : ICommand<Guid>;
 }

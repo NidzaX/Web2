@@ -1,10 +1,12 @@
 ﻿using Google.Apis.Auth;
+using MediatR;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Taxi.Application.Abstractions.Messaging;
 using Taxi.Application.Users.Commands;
@@ -62,15 +64,17 @@ namespace Taxi.Application.Users.RegisterUserGoogle
             {
                 throw new Exception(e.Message);
             }
-            if (request.Address.Trim() == "" || request.Email.Trim() == "" || request.LastName.Trim() == "" || request.Username.Trim() == "" || request.File == null)
-                throw new Exception("Invalid data");
+            if (request.Address.Trim() == "" || request.Email.Trim() == "" || request.LastName.Trim() == "" || request.Username.Trim() == "")
+                return (Result<Guid>)Result.Failure(UserErrors.NotFound);
 
             if (request.UserType.Trim() != "user")
-                throw new Exception("Invalid data");
+                return (Result<Guid>)Result.Failure(UserErrors.InvalidCredentials);
 
             var hashPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
-            var user = User.Create(
+            using (var stream = new MemoryStream())
+            {
+                var user = User.Create(
                        new FirstName(request.FirstName),
                        new LastName(request.LastName),
                        new Email(request.Email),
@@ -79,25 +83,17 @@ namespace Taxi.Application.Users.RegisterUserGoogle
                        new Address(request.Address),
                        new Birthday(request.Birthday),
                        new UserType(request.UserType),
-                       null,
-                       new Verified(request.Verified)
+                       new Picture(stream.ToArray())
                        );
+                       
 
+                _userRepository.Add(user);
 
-            //using (var stream = new MemoryStream())
-            //{
-            //    request.File.CopyTo(stream);
-            //    user.Picture = stream.ToArray();
+                await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            //}
-
-
-
-            _userRepository.Add(user);
-
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
-
-            return user.Id;
+                return user.Id;
+            
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Taxi.Domain.Rides
         Confirmed = 1,
         Completed = 2,
         Reserved = 3,
-        Rejected = 4
+        Rejected = 4,
+        Created = 5
     }
 }

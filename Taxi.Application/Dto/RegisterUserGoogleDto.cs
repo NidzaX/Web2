@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,7 @@ namespace Taxi.Application.Dto
         DateTime Birthday,
         string UserType,
         string Email,
-        string File,
-        bool Verified,
+        IFormFile File,
         string Token);
 
 }

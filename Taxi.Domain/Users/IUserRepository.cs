@@ -10,6 +10,8 @@ namespace Taxi.Domain.Users
     public interface IUserRepository
     {
         Task<User?> GetUserByEmailAsync(string email);
+        Task<User?> GetUserByIdAsync(Guid id);
+
         void Add(User user);
         void Update(User user);
     }

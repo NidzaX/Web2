@@ -31,7 +31,7 @@ namespace Taxi.Application.Users.Commands
 
             RuleFor(c => c.birthday).NotEmpty();
 
-            //RuleFor(c => c.file).NotEmpty();
+            RuleFor(c => c.file).NotEmpty();
 
         }
 

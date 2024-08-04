@@ -48,8 +48,6 @@ namespace Taxi.Domain.Rides
             }
         }
 
-
-
         private string GetCoordinates(string address)
         {
             var client = new RestClient($"https://us1.locationiq.com/v1/search.php?key={ApiKey}&q={Uri.EscapeDataString(address)}&format=json");
@@ -68,7 +66,7 @@ namespace Taxi.Domain.Rides
             }
             else
             {
-                return null;
+                return null!;
             }
         }
 
@@ -90,5 +88,16 @@ namespace Taxi.Domain.Rides
 
             return waitingTime;
         }
+
+        public double EstimatePickupTime()
+        {
+            // Generate a random time between 5 and 15 minutes for pickup
+            Random random = new Random();
+            double randomPickupTime = random.Next(5, 16); // Generates a random number between 5 and 15 (inclusive)
+
+            return randomPickupTime;
+        }
+
+
     }
 }
