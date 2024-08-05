@@ -6,6 +6,7 @@ using Taxi.Application.Dto;
 using Taxi.Application.Rides.CreateRide;
 using Taxi.Application.Rides.ReserveRide;
 using Taxi.Domain.Abstractions;
+using Taxi.Domain.Rides;
 
 namespace Taxi.Api.Controllers.Rides
 {
@@ -28,11 +29,9 @@ namespace Taxi.Api.Controllers.Rides
                 dto.userId,
                 dto.driverId,
                 dto.startAddress,
-                dto.endAddress,
-                dto.PricingService,
-                dto.createdOnUtc);
+                dto.endAddress);
 
-            Result<Guid> result = await _sender.Send(command, cancellationToken);
+            var result = await _sender.Send(command, cancellationToken);
 
             if (result.IsFailure)
             {
@@ -47,8 +46,7 @@ namespace Taxi.Api.Controllers.Rides
         public async Task<IActionResult> ReserveRide([FromBody] ReserveRideDto dto, CancellationToken cancellationToken)
         {
             var command = new ReserveDriverCommand(
-                dto.RideId,
-                dto.PricingService);
+                dto.RideId);
 
             Result<Guid> result = await _sender.Send(command, cancellationToken);
 

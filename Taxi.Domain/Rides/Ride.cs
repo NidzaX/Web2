@@ -55,16 +55,17 @@ namespace Taxi.Domain.Rides
 
         public DateTime? RejectedOnUtc { get; set; }
 
-        public static (Ride ride, double price) Create(
+        public static Ride Create(
            Guid userId,
            Guid driverId,
            StartAddress startAddress,
-           EndAddress endAddress,
-           PricingService pricingService,
-           DateTime utcNow)
+           EndAddress endAddress)
         {
-            double price = pricingService.CalculatePrice(startAddress.Value, endAddress.Value);
-            double pickUpTime = pricingService.EstimatePickupTime();
+            //double price = new PricingService().CalculatePrice(startAddress.Value, endAddress.Value);
+            //double pickUpTime = new PricingService().EstimatePickupTime();
+
+            double price = 0.0;
+            double pickUpTime = 0.0;
 
             var ride = new Ride(
                 Guid.NewGuid(),
@@ -75,19 +76,18 @@ namespace Taxi.Domain.Rides
                 startAddress,
                 endAddress,
                 RideStatus.Created,
-                utcNow);
+                DateTime.UtcNow);
 
-          //  ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
+            //  ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
 
-            return (ride, price);
+            return ride;
         }
 
 
         public static Ride Reserve(
-            Ride ride,
-            PricingService pricingService)
+            Ride ride)
         {
-            double waitingTime = pricingService.EstimatePickupTime();
+            double waitingTime = new PricingService().PredictWaitingTime(ride.StartAddress.Value, ride.EndAddress.Value);
 
             ride.UpdateWaitingTimeAndStatus(waitingTime, RideStatus.Reserved);
             

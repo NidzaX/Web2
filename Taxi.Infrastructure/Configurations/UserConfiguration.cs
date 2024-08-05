@@ -36,7 +36,7 @@ namespace Taxi.Infrastructure.Configurations
               .HasConversion(picture => picture.Value, value => new Picture(value));
             builder.Property(user => user.UserType).IsRequired()
                 .HasConversion(usertType => usertType.Value, value=> new UserType(value));
-            builder.Property(user => user.Verified).IsRequired()
+            builder.Property(user => user.Verified)
                 .HasConversion(verified => verified.Value, value => new Verified(value));
 
 

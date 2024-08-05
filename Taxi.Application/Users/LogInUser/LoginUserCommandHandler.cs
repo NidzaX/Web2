@@ -32,7 +32,7 @@ internal sealed class LoginUserCommandHandler : ICommandHandler<LoginUserCommand
             throw new Exception("Incorrect login credentials");
         }
 
-        if (BCrypt.Net.BCrypt.Verify(request.Password, user.Password.Value))
+        if (!BCrypt.Net.BCrypt.Verify(request.Password, user.Password.Value))
         {
             return new AccessTokenResponse("Error");
         }

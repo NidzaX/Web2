@@ -10,7 +10,6 @@ using Taxi.Domain.Rides;
 namespace Taxi.Application.Rides.ReserveRide
 {
     public record ReserveDriverCommand(
-        Guid RideId,
-        PricingService PricingService) : ICommand<Guid>;
+        Guid RideId) : ICommand<Guid>;
     
 }

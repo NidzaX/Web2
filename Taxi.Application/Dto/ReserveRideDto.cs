@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Taxi.Domain.Rides;
-
-namespace Taxi.Application.Dto
+﻿namespace Taxi.Application.Dto
 {
     public record ReserveRideDto(
-        Guid RideId,
-        PricingService PricingService);
+        Guid RideId);
 
 }

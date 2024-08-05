@@ -11,8 +11,6 @@ namespace Taxi.Application.Dto
          Guid userId,
          Guid driverId,
          StartAddress startAddress,
-         EndAddress endAddress,
-         PricingService PricingService,
-         DateTime createdOnUtc);
+         EndAddress endAddress);
 
 }

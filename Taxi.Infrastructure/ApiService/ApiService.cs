@@ -1,15 +1,11 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Net;
+using Taxi.Application.Abstractions.Api;
 
-namespace Taxi.Domain.Rides
+namespace Taxi.Infrastructure.ApiService
 {
-    public class PricingService
+    public class ApiService : IApiService
     {
         private const string ApiKey = "pk.efbcae8c5d9dcd6bc03125912d8a6d4b";
 
@@ -41,6 +37,9 @@ namespace Taxi.Domain.Rides
                 var jsonResponse = JObject.Parse(response.Content!);
                 double distanceInMeters = jsonResponse["routes"]![0]!["distance"]!.Value<double>();
                 return distanceInMeters / 1000.0; // Convert to kilometers
+            } else if(response.StatusCode == HttpStatusCode.TooManyRequests)
+            {
+                throw new Exception("You're requesting too fast...");
             }
             else
             {
@@ -97,7 +96,5 @@ namespace Taxi.Domain.Rides
 
             return randomPickupTime;
         }
-
-
     }
 }

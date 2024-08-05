@@ -142,9 +142,9 @@ namespace Taxi.Api.Controllers.Users
             return Ok(result.IsSuccess);
         }
 
-        [HttpPut("verify/{email}/{v}")]
+        [HttpPut("verify")]
         [Authorize(Roles = "admin")]
-        public async Task<IActionResult> VerifyUser([FromForm] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
+        public async Task<IActionResult> VerifyUser([FromBody] VerifyDriverDto verifyDriverDto, CancellationToken cancellationToken)
         {
             var command = new VerifyDriverCommand(verifyDriverDto.email, verifyDriverDto.v);
 
@@ -159,9 +159,9 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpGet("getUserData/{email}")]
-        public async Task<IActionResult> GetUserData(string email, CancellationToken cancellationToken)
+        public async Task<IActionResult> GetUserData(Guid userId, CancellationToken cancellationToken)
         {
-            var query = new GetUserQuery(email);
+            var query = new GetUserQuery(userId);
 
             Result<GetUserDto> result = await _sender.Send(query, cancellationToken);
 
@@ -173,20 +173,27 @@ namespace Taxi.Api.Controllers.Users
             return Ok(result.IsSuccess);
         }
 
-        //[HttpGet("getDriverData/{email}")]
-        //public async Task<IActionResult> GetDriverData(string email, CancellationToken cancellationToken)
-        //{
-        //    var query = new GetUserQuery(email);
+        [HttpGet("getDriverData")]
+        public async Task<IActionResult> GetDriverData(CancellationToken cancellationToken)
+        {
+            var userFromJWT = HttpContext.User.FindFirst("Id")?.Value;
 
-        //    Result<GetUserDto> result = await _sender.Send(query, cancellationToken);
+            if (!Guid.TryParse(userFromJWT, out Guid userId))
+            {
+                return BadRequest();
+            }
 
-        //    if (result.IsFailure)
-        //    {
-        //        return BadRequest(result.Error);
+            var query = new GetUserQuery(userId);
 
-        //    }
-        //    return Ok(result.IsSuccess);
+            Result<GetUserDto> result = await _sender.Send(query, cancellationToken);
 
-        //}
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+
+            }
+            return Ok(result);
+
+        }
     }
 }

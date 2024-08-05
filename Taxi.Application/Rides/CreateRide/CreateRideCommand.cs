@@ -12,9 +12,7 @@ namespace Taxi.Application.Rides.CreateRide
          Guid userId,
          Guid driverId,
          StartAddress startAddress,
-         EndAddress endAddress,
-         PricingService PricingService,
-         DateTime createdOnUtc) : ICommand<Guid>;
+         EndAddress endAddress) : ICommand<Ride>;
 
 
 }

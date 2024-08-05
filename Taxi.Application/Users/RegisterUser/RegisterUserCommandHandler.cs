@@ -47,6 +47,8 @@ namespace Taxi.Application.Users.Commands
             RegisterUserCommand request,
             CancellationToken cancellationToken)
         {
+
+            //Check if user exists
             if (request.address.Trim() == "" || request.email.Trim() == "" || request.lastName.Trim() == "" || request.username.Trim() == "")
                 return (Result<Guid>)Result.Failure(UserErrors.NotFound);
 

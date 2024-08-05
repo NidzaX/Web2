@@ -18,5 +18,4 @@ namespace Taxi.Application.Dto
         string UserType,
         string Email,
         IFormFile File);
-    
 }

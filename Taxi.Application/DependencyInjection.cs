@@ -33,7 +33,7 @@ namespace Taxi.Application
             IMapper mapper = config.CreateMapper();
 
             services.AddSingleton(mapper);
-
+            
             return services;
         }
     }

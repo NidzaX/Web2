@@ -26,7 +26,7 @@ namespace Taxi.Application.Users.GetUser
 
         public async Task<Result<GetUserDto>> Handle(GetUserQuery request, CancellationToken cancellationToken)
         {
-            User? user = await _userRepository.GetUserByEmailAsync(request.Email);
+            User? user = await _userRepository.GetUserByIdAsync(request.userId);
             if (user == null)
             {
                 throw new Exception("User does not exist");
@@ -37,7 +37,6 @@ namespace Taxi.Application.Users.GetUser
                 return _mapper.Map<GetUserDto>(user);
 
             }
-
             throw new Exception("Ne mere"); // testing testing 123
         }
     }

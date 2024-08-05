@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Taxi.Application.Abstractions.Api;
 using Taxi.Domain.Abstractions;
 using Taxi.Domain.Review;
 using Taxi.Domain.Rides;
@@ -29,6 +30,7 @@ public static class DependencyInjection
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRideRepository, RideRepository>();
         services.AddScoped<IReviewRepository, ReviewRepository>();
+        services.AddScoped<IApiService, Taxi.Infrastructure.ApiService.ApiService>();
         return services;
     }
 }

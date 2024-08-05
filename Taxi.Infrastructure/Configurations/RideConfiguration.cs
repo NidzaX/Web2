@@ -30,7 +30,7 @@ namespace Taxi.Infrastructure.Configurations
 
             builder.HasOne<User>()
                 .WithMany()
-                .HasForeignKey(user => user.Id);
+                .HasForeignKey(ride => ride.UserId);
         }
     }
 }

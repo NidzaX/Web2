@@ -9,6 +9,6 @@ using Taxi.Application.Dto;
 namespace Taxi.Application.Users.GetUser
 {
     public record GetUserQuery(
-        string Email) : IQuery<GetUserDto>;
+        Guid userId) : IQuery<GetUserDto>;
     
 }

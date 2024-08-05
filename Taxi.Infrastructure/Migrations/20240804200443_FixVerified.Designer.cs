@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Taxi.Infrastructure;
@@ -11,9 +12,11 @@ using Taxi.Infrastructure;
 namespace Taxi.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240804200443_FixVerified")]
+    partial class FixVerified
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,7 +65,6 @@ namespace Taxi.Infrastructure.Migrations
             modelBuilder.Entity("Taxi.Domain.Rides.Ride", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
                         .HasColumnName("id");
 
@@ -118,9 +120,6 @@ namespace Taxi.Infrastructure.Migrations
 
                     b.HasKey("Id")
                         .HasName("pk_rides");
-
-                    b.HasIndex("UserId")
-                        .HasDatabaseName("ix_rides_user_id");
 
                     b.ToTable("rides", (string)null);
                 });
@@ -214,10 +213,10 @@ namespace Taxi.Infrastructure.Migrations
                 {
                     b.HasOne("Taxi.Domain.Users.User", null)
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_rides_user_user_id");
+                        .HasConstraintName("fk_rides_user_id");
                 });
 #pragma warning restore 612, 618
         }
