@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\loginuser\\loginusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\loginuser\\loginusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\loginuser\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\changeuserpassword\\changeuserpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\changeuserpassword\\changeuserpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\changeuserpassword\\changeuserpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\changeuserpassword\\changeuserpasswordvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\changeuserpassword\\changeuserpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\changeuserpassword\\changeuserpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Taxi.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Program.cs",
+              "RelativeToolTip": "Taxi.Api\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T03:35:14.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "RelativeToolTip": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAswDMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:00:57.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginUserCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:54:00.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:53:59.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommand.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommand.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\LogInUser\\LoginUserCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:53:57.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChangeUserPasswordValidator.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:48:43.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChangeUserPasswordCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:48:11.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangeUserPasswordCommand.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:36:42.608Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
