@@ -7,6 +7,6 @@ using Taxi.Domain.Abstractions;
 
 namespace Taxi.Domain.Rides.Events
 {
-    public sealed record RideCancelledDomainEvent(Guid RideId) : IDomainEvent;
+    public sealed record RideCancelledDomainEvent(Guid? RideId) : IDomainEvent;
     
 }

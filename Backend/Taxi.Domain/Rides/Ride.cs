@@ -7,9 +7,10 @@ namespace Taxi.Domain.Rides
     {
         private Ride(Guid id,
                     Guid userId,
-                    Guid driverId,
+                    Guid? driverId,
                     Price price,
                     PredictedTime predictedTime,
+                    WaitingTime? waitingTime,
                     StartAddress startAddress,
                     EndAddress endAddress,
                     RideStatus rideStatus,
@@ -20,6 +21,7 @@ namespace Taxi.Domain.Rides
             DriverId = driverId;
             Price = price;
             PredictedTime = predictedTime;
+            WaitingTime = waitingTime;
             StartAddress = startAddress;
             EndAddress = endAddress;
             Status = rideStatus;
@@ -33,11 +35,13 @@ namespace Taxi.Domain.Rides
 
         public Guid UserId { get; set; }
 
-        public Guid DriverId { get; set; }
+        public Guid? DriverId { get; set; }
 
         public Price Price { get; set; }
 
         public PredictedTime PredictedTime { get; set; }
+
+        public WaitingTime? WaitingTime { get; set; }
 
         public StartAddress StartAddress { get; set; }
         
@@ -57,7 +61,7 @@ namespace Taxi.Domain.Rides
 
         public static Ride Create(
            Guid userId,
-           Guid driverId,
+           Guid? driverId,
            StartAddress startAddress,
            EndAddress endAddress)
         {
@@ -73,6 +77,7 @@ namespace Taxi.Domain.Rides
                 driverId,
                 new Price(price),
                 new PredictedTime(pickUpTime),
+                null,
                 startAddress,
                 endAddress,
                 RideStatus.Created,
@@ -89,20 +94,20 @@ namespace Taxi.Domain.Rides
         {
             double waitingTime = new PricingService().PredictWaitingTime(ride.StartAddress.Value, ride.EndAddress.Value);
 
-            ride.UpdateWaitingTimeAndStatus(waitingTime, RideStatus.Reserved);
-            
+            ride.WaitingTime = new WaitingTime(waitingTime);
+
             //ride.RaiseDomainEvent(new RideReservedDomainEvent(ride.DriverId));
 
             return ride;
         }
 
-        public void UpdateWaitingTimeAndStatus(double waitingTime, RideStatus status)
-        {
-            PredictedTime = new PredictedTime(waitingTime);
-            Status = status;
-        }
+        //public void UpdateWaitingTimeAndStatus(double waitingtime, RideStatus status)
+        //{
+        //    PredictedTime = new PredictedTime(waitingtime);
+        //    Status = status;
+        //}
 
-        public Result Confirm(DateTime utcNow)
+        public Result Confirm(DateTime utcnow)
         {
             if (Status != RideStatus.Reserved)
             {
@@ -110,7 +115,7 @@ namespace Taxi.Domain.Rides
             }
 
             Status = RideStatus.Confirmed;
-            ConfirmedOnUtc = utcNow;
+            ConfirmedOnUtc = utcnow;
 
             RaiseDomainEvent(new RideConfirmedDomainEvent(DriverId));
 
@@ -119,7 +124,7 @@ namespace Taxi.Domain.Rides
 
         public Result Cancel(DateTime utcNow)
         {
-            if(Status != RideStatus.Confirmed)
+            if (Status != RideStatus.Confirmed)
             {
                 return Result.Failure(RideErrors.NotConfirmed);
             }
@@ -147,15 +152,15 @@ namespace Taxi.Domain.Rides
             return Result.Success();
         }
 
-        public Result Reject(DateTime utcNow)
+        public Result Reject(DateTime utcnow)
         {
-            if(Status != RideStatus.Reserved)
+            if (Status != RideStatus.Reserved)
             {
                 return Result.Failure(RideErrors.NotReserved);
             }
 
             Status = RideStatus.Rejected;
-            RejectedOnUtc = utcNow;
+            RejectedOnUtc = utcnow;
 
             RaiseDomainEvent(new RideRejectedDomainEvent(DriverId));
 

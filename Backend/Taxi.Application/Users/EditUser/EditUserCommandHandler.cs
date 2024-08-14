@@ -38,7 +38,7 @@ namespace Taxi.Application.Users.EditUser
             user.LastName = new LastName(request.LastName);
             user.Password = new Password(request.Password);
             user.Address = new Address(request.Address);
-            user.Birthday = new Birthday(request.Birthday);
+            user.Birthday = new Birthday(request.Birthday.ToUniversalTime());
             user.UserType = new UserType(request.UserType);
             user.Email = new Email(request.Email);
             using (var stream = new MemoryStream())

@@ -21,16 +21,35 @@ namespace Taxi.Infrastructure.Configurations
 
             builder.Property(ride => ride.Price).IsRequired()
                 .HasConversion(price => price.Value , value => new Price(value));
+
             builder.Property(ride => ride.PredictedTime).IsRequired()
                  .HasConversion(predictedTime => predictedTime.Value, value => new PredictedTime(value));
+
+            builder.Property(ride => ride.WaitingTime)
+            .HasConversion(
+                waitingTime => waitingTime.Value, 
+                value => new WaitingTime(value)) 
+            .IsRequired(false); 
+
+
             builder.Property(ride => ride.StartAddress).IsRequired()
                 .HasConversion(startAddress => startAddress.Value , value => new StartAddress(value));
+
             builder.Property(ride => ride.EndAddress).IsRequired()
                .HasConversion(endAddress => endAddress.Value, value => new EndAddress(value));
 
             builder.HasOne<User>()
+             .WithMany()
+             .HasForeignKey(ride => ride.UserId)
+             .OnDelete(DeleteBehavior.Cascade);  
+
+            builder.Property(ride => ride.DriverId)
+                .IsRequired(false);  
+
+            builder.HasOne<User>()
                 .WithMany()
-                .HasForeignKey(ride => ride.UserId);
+                .HasForeignKey(ride => ride.DriverId)
+                .OnDelete(DeleteBehavior.SetNull);  
         }
     }
 }

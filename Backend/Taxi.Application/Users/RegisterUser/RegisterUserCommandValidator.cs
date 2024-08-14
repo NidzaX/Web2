@@ -11,27 +11,27 @@ namespace Taxi.Application.Users.Commands
     {
         public RegisterUserCommandValidator()
         {
-            RuleFor(c => c.firstName).NotEmpty();
+            RuleFor(c => c.FirstName).NotEmpty();
 
-            RuleFor(c => c.lastName).NotEmpty();
+            RuleFor(c => c.LastName).NotEmpty();
 
-            RuleFor(c => c.username).NotEmpty();
+            RuleFor(c => c.Username).NotEmpty();
 
-            RuleFor(c => c.password)
+            RuleFor(c => c.Password)
                            .NotEmpty()
                            .MinimumLength(4)
                            .WithMessage("Invalid password.");
 
-            RuleFor(c => c.email)
+            RuleFor(c => c.Email)
                 .NotEmpty()
                 .EmailAddress()
                 .WithMessage("Invalid email address.");
 
-            RuleFor(c => c.address).NotEmpty();
+            RuleFor(c => c.Address).NotEmpty();
 
-            RuleFor(c => c.birthday).NotEmpty();
+            RuleFor(c => c.Birthday).NotEmpty();
 
-            RuleFor(c => c.file).NotEmpty();
+            RuleFor(c => c.File).NotEmpty();
 
         }
 

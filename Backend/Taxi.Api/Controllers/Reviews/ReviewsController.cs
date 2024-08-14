@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Taxi.Application.Reviews.AddReview;
 using Taxi.Application.Users.Commands;
 using Taxi.Domain.Abstractions;
+using Taxi.Application.Reviews.CalculateReview;
 
 namespace Taxi.Api.Controllers.Reviews
 {
@@ -12,10 +13,12 @@ namespace Taxi.Api.Controllers.Reviews
     public class ReviewsController : ControllerBase
     {
         private readonly ISender _sender;
-
-        public ReviewsController(ISender sender)
+        private readonly CalculateReview _calculateReview;
+        public ReviewsController(ISender sender, CalculateReview calculateReview)
         {
             _sender = sender;
+            _calculateReview = calculateReview;
+
         }
 
         [HttpPost]
@@ -31,6 +34,24 @@ namespace Taxi.Api.Controllers.Reviews
             }
 
             return Ok();
+        }
+
+        [HttpGet("median/{driverId}")]
+        public async Task<IActionResult> GetMedianReviewScore(Guid driverId)
+        {
+            try
+            {
+                double medianScore = await _calculateReview.GetReviewScoresByDriverIdAsync(driverId);
+                return Ok(medianScore);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
+            }
         }
     }
 }

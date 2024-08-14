@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c3AVk8qcBthsskKFSpBV8TPrR7Gx4m4aPFKl5RSby+z1JInNmVTxbEitfhIunB0B3PRofoGYaprY/7sVLGZqBg==",
+  "dgSpecHash": "PaSXFkVmsQ1GXW3y+qv4VXGLDS0uiora8GLon19BnE+rNTNbM1XFFc4R8hz55OK+XU7+P14yO0VCjmRENEZF9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Taxi.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nidza\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\nidza\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\nidza\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\nidza\\.nuget\\packages\\efcore.namingconventions\\8.0.3\\efcore.namingconventions.8.0.3.nupkg.sha512",
     "C:\\Users\\nidza\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\nidza\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",

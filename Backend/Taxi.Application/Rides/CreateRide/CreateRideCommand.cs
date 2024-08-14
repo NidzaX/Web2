@@ -10,7 +10,7 @@ namespace Taxi.Application.Rides.CreateRide
 {
     public record CreateRideCommand(
          Guid userId,
-         Guid driverId,
+         Guid? driverId,
          StartAddress startAddress,
          EndAddress endAddress) : ICommand<Ride>;
 

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Taxi.Application.Dto;
 using Taxi.Application.Rides.CreateRide;
 using Taxi.Application.Rides.ReserveRide;
@@ -22,9 +23,19 @@ namespace Taxi.Api.Controllers.Rides
         }
 
         [HttpPost("createRide")]
-        [Authorize(Roles = "driver")]
         public async Task<IActionResult> CreateRide([FromBody] CreateRideDto dto, CancellationToken cancellationToken)
         {
+            Console.WriteLine($"Received DTO: {JsonConvert.SerializeObject(dto)}");
+
+            if (!ModelState.IsValid)
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine($"Model State Error: {error.ErrorMessage}");
+                }
+                return BadRequest("Invalid model state.");
+            }
+
             var command = new CreateRideCommand(
                 dto.userId,
                 dto.driverId,
@@ -42,13 +53,15 @@ namespace Taxi.Api.Controllers.Rides
         }
 
         [HttpPost("reserveRide")]
-        [Authorize(Roles = "driver")]
+ //       [Authorize(Roles = "driver")]
         public async Task<IActionResult> ReserveRide([FromBody] ReserveRideDto dto, CancellationToken cancellationToken)
         {
+            Console.WriteLine($"Received RideId: {dto.RideId}");
+
             var command = new ReserveDriverCommand(
                 dto.RideId);
 
-            Result<Guid> result = await _sender.Send(command, cancellationToken);
+            Result<Ride> result = await _sender.Send(command, cancellationToken);
 
             if (result.IsFailure)
             {

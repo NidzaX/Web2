@@ -9,7 +9,7 @@ namespace Taxi.Application.Dto
 {
     public record CreateRideDto(
          Guid userId,
-         Guid driverId,
+         Guid? driverId,
          StartAddress startAddress,
          EndAddress endAddress);
 

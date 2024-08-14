@@ -29,15 +29,16 @@ namespace Taxi.Application.Users.GetUser
             User? user = await _userRepository.GetUserByIdAsync(request.userId);
             if (user == null)
             {
-                throw new Exception("User does not exist");
+                return Result.Failure<GetUserDto>(UserErrors.NotFound); 
             }
-            
-            if(user.UserType.Value == "user")
-            {
-                return _mapper.Map<GetUserDto>(user);
 
+            if (user.UserType.Value == "user")
+            {
+                var userDto = _mapper.Map<GetUserDto>(user);
+                return Result.Success(userDto);
             }
-            throw new Exception("Ne mere"); // testing testing 123
+
+            return Result.Failure<GetUserDto>(UserErrors.UnauthorizedAccess);
         }
     }
 }

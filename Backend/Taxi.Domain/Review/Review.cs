@@ -7,7 +7,7 @@ namespace Taxi.Domain.Review
         private Review(
             Guid id,
             Guid userId,
-            Guid driverId,
+            Guid? driverId,
             Rating rating,
             Comment comment
         )
@@ -27,7 +27,7 @@ namespace Taxi.Domain.Review
 
         }
 
-        public Guid DriverId {get; private set; }
+        public Guid? DriverId {get; private set; }
 
         public Guid UserId { get; private set;}
 
@@ -38,7 +38,7 @@ namespace Taxi.Domain.Review
 
         public static Result<Review> Create(
             Guid userId,
-            Guid driverId,
+            Guid? driverId,
             Rating rating,
             Comment comment
            )

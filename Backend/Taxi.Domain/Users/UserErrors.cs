@@ -16,5 +16,9 @@ namespace Taxi.Domain.Users
         public static readonly Error InvalidCredentials = new(
             "User.InvalidCredentials",
             "The provided credentials were invalid");
+
+        public static readonly Error UnauthorizedAccess = new(
+            "User.UnauthorizedAccess",
+            "The User is unauthorized");
     }
 }

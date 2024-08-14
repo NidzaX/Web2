@@ -264,3 +264,4 @@ C:\Users\nidza\OneDrive\Desktop\Taxi\Backend\Taxi.Api\obj\Debug\net8.0\refint\Ta
 C:\Users\nidza\OneDrive\Desktop\Taxi\Backend\Taxi.Api\obj\Debug\net8.0\Taxi.Api.pdb
 C:\Users\nidza\OneDrive\Desktop\Taxi\Backend\Taxi.Api\obj\Debug\net8.0\Taxi.Api.genruntimeconfig.cache
 C:\Users\nidza\OneDrive\Desktop\Taxi\Backend\Taxi.Api\obj\Debug\net8.0\ref\Taxi.Api.dll
+C:\Users\nidza\OneDrive\Desktop\Taxi\Backend\Taxi.Api\bin\Debug\net8.0\Dapper.dll

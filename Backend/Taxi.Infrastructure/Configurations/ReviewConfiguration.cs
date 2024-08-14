@@ -27,12 +27,18 @@ namespace Taxi.Infrastructure.Configurations
                 .HasConversion(comment => comment.Value, value => new Comment(value));
 
             builder.HasOne<User>()
-            .WithMany()
-            .HasForeignKey(review => review.UserId);
+            .WithMany() 
+            .HasForeignKey(review => review.DriverId)
+            .OnDelete(DeleteBehavior.Restrict); 
 
-            builder.HasOne<Ride>()
-                .WithMany()
-                .HasForeignKey(review => review.DriverId);
+            builder.HasOne<User>()
+                .WithMany() 
+                .HasForeignKey(review => review.UserId)
+                .OnDelete(DeleteBehavior.Restrict); 
+
+            //builder.HasOne<Ride>()
+            //    .WithMany()
+            //    .HasForeignKey(review => review.DriverId);
         }
     }
 }

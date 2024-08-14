@@ -41,25 +41,37 @@ namespace Taxi.Api.Controllers.Users
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] RegisterRequestDto registerRequestDto, CancellationToken cancellationToken)
         {
-            var command = new RegisterUserCommand(
-                registerRequestDto.Username,
-                registerRequestDto.FirstName,
-                registerRequestDto.LastName,
-                registerRequestDto.Password,
-                registerRequestDto.Address,
-                registerRequestDto.Birthday,
-                registerRequestDto.UserType,
-                registerRequestDto.Email,
-                registerRequestDto.File);
-
-            Result<Guid> result = await _sender.Send(command, cancellationToken);
-
-            if (result.IsFailure)
+            try
             {
-                return BadRequest(result.Error);
-            }
+                if (registerRequestDto.File == null || registerRequestDto.File.Length == 0)
+                {
+                    return BadRequest("No file uploaded.");
+                }
 
-            return Ok(result.Value);
+                var command = new RegisterUserCommand(
+                    registerRequestDto.Username,
+                    registerRequestDto.FirstName,
+                    registerRequestDto.LastName,
+                    registerRequestDto.Password,
+                    registerRequestDto.Address,
+                    registerRequestDto.Birthday,
+                    registerRequestDto.UserType,
+                    registerRequestDto.Email,
+                    registerRequestDto.File);
+
+                Result<Guid> result = await _sender.Send(command, cancellationToken);
+
+                if (result.IsFailure)
+                {
+                    return BadRequest(result.Error);
+                }
+
+                return Ok(result.Value);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
+            }
 
         }
 
@@ -120,7 +132,7 @@ namespace Taxi.Api.Controllers.Users
         }
 
         [HttpPut("updateProfile")]
-        public async Task<IActionResult> UpdateProfile([FromBody] UserEditDto dto, CancellationToken cancellationToken)
+        public async Task<IActionResult> UpdateProfile([FromForm] UserEditDto dto, CancellationToken cancellationToken)
         {
             var command = new EditUserCommand(
                 dto.Username,
@@ -158,7 +170,7 @@ namespace Taxi.Api.Controllers.Users
             return Ok(result.IsSuccess);
         }
 
-        [HttpGet("getUserData/{email}")]
+        [HttpGet("getUserData/{userId}")]
         public async Task<IActionResult> GetUserData(Guid userId, CancellationToken cancellationToken)
         {
             var query = new GetUserQuery(userId);
@@ -170,7 +182,7 @@ namespace Taxi.Api.Controllers.Users
                 return BadRequest(result.Error);
 
             }
-            return Ok(result.IsSuccess);
+            return Ok(result.Value);
         }
 
         [HttpGet("getDriverData")]
@@ -192,7 +204,7 @@ namespace Taxi.Api.Controllers.Users
                 return BadRequest(result.Error);
 
             }
-            return Ok(result);
+            return Ok(result.Value);
 
         }
     }

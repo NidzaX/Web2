@@ -10,15 +10,15 @@ namespace Taxi.Application.Dto;
 
 public class GetUserDto
 {
-
-    public Username Username { get; set; } 
-    public FirstName FirstName { get; set; }
-    public LastName LastName { get; set; } 
-    public Password Password { get; set; } 
-    public Address Address { get; set; } 
-    public Birthday Birthday { get; set; } 
-    public UserType UserType { get; set; } 
-    public Email Email { get; set; } 
-    public IFormFile? File { get; set; }
+    public string Username { get; set; } 
+    public string FirstName { get; set; }
+    public string LastName { get; set; } 
+    public string Password { get; set; } 
+    public string Address { get; set; } 
+    public DateTime? Birthday { get; set; } 
+    public string UserType { get; set; } 
+    public string Email { get; set; } 
+    public byte[] File { get; set; } 
 }
+
 

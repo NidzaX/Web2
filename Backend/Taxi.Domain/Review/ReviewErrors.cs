@@ -13,5 +13,8 @@ namespace Taxi.Domain.Review
         "Review.NotEligible",
         "The review is not eligible because the booking is not yet completed");
 
+        public static readonly Error NotFound = new(
+       "Review.NotFound",
+       "The review doesn not exist");
     }
 }

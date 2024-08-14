@@ -35,7 +35,7 @@ namespace Taxi.Infrastructure.Migrations
                         .HasColumnType("character varying(200)")
                         .HasColumnName("comment");
 
-                    b.Property<Guid>("DriverId")
+                    b.Property<Guid?>("DriverId")
                         .HasColumnType("uuid")
                         .HasColumnName("driver_id");
 
@@ -82,7 +82,7 @@ namespace Taxi.Infrastructure.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_on_utc");
 
-                    b.Property<Guid>("DriverId")
+                    b.Property<Guid?>("DriverId")
                         .HasColumnType("uuid")
                         .HasColumnName("driver_id");
 
@@ -116,8 +116,15 @@ namespace Taxi.Infrastructure.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("user_id");
 
+                    b.Property<double?>("WaitingTime")
+                        .HasColumnType("double precision")
+                        .HasColumnName("waiting_time");
+
                     b.HasKey("Id")
                         .HasName("pk_rides");
+
+                    b.HasIndex("DriverId")
+                        .HasDatabaseName("ix_rides_driver_id");
 
                     b.HasIndex("UserId")
                         .HasDatabaseName("ix_rides_user_id");
@@ -195,23 +202,28 @@ namespace Taxi.Infrastructure.Migrations
 
             modelBuilder.Entity("Taxi.Domain.Review.Review", b =>
                 {
-                    b.HasOne("Taxi.Domain.Rides.Ride", null)
+                    b.HasOne("Taxi.Domain.Users.User", null)
                         .WithMany()
                         .HasForeignKey("DriverId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_reviews_ride_driver_id");
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .HasConstraintName("fk_reviews_user_driver_id");
 
                     b.HasOne("Taxi.Domain.Users.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired()
                         .HasConstraintName("fk_reviews_user_user_id");
                 });
 
             modelBuilder.Entity("Taxi.Domain.Rides.Ride", b =>
                 {
+                    b.HasOne("Taxi.Domain.Users.User", null)
+                        .WithMany()
+                        .HasForeignKey("DriverId")
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .HasConstraintName("fk_rides_user_driver_id");
+
                     b.HasOne("Taxi.Domain.Users.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")

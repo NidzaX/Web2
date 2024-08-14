@@ -10,14 +10,14 @@ using Taxi.Application.Abstractions.Messaging;
 namespace Taxi.Application.Users.Commands
 {
     public record RegisterUserCommand(
-        string username,
-        string firstName,
-        string lastName,
-        string password,
-        string address,
-        DateTime birthday,
-        string userType,
-        string email,
-        IFormFile file) : ICommand<Guid>;
+        string Username,
+        string FirstName,
+        string LastName,
+        string Password,
+        string Address,
+        DateTime Birthday,
+        string UserType,
+        string Email,
+        IFormFile File) : ICommand<Guid>;
     
 }

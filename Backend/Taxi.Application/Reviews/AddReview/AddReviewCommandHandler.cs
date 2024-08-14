@@ -34,6 +34,7 @@ namespace Taxi.Application.Reviews.AddReview
 
         public async Task<Result> Handle(AddReviewCommand request, CancellationToken cancellationToken)
         {
+
             User? user = await _userRepository.GetUserByEmailAsync(request.UserEmail);
             Ride? ride = await _rideRepository.GetByIdAsync(request.DriverId, cancellationToken);
 

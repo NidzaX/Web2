@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Taxi.Domain.Abstractions;
+using Taxi.Domain.Review;
 using Taxi.Domain.Users;
 
 namespace Taxi.Infrastructure
@@ -17,6 +18,7 @@ namespace Taxi.Infrastructure
         {
             _publisher = publisher;
         }
+        public DbSet<Review> Reviews { get; set; } // Add this line
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -9,5 +9,8 @@ namespace Taxi.Domain.Review
     public interface IReviewRepository
     {
         void Add(Review review);
+
+        Task<List<int>> GetReviewScoresByDriverIdAsync(Guid driverId);
+        
     }
 }

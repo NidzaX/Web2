@@ -10,7 +10,7 @@ using Taxi.Domain.Rides;
 
 namespace Taxi.Application.Rides.ReserveRide
 {
-    internal sealed class ReserveDriverCommandHandler : ICommandHandler<ReserveDriverCommand, Guid>
+    internal sealed class ReserveDriverCommandHandler : ICommandHandler<ReserveDriverCommand, Ride>
     {
         private readonly IRideRepository _rideRepository;
         private readonly IUnitOfWork _unitOfWork;
@@ -26,26 +26,26 @@ namespace Taxi.Application.Rides.ReserveRide
             _apiService = apiService;
         }
 
-        public async Task<Result<Guid>> Handle(ReserveDriverCommand request, CancellationToken cancellationToken)
+        public async Task<Result<Ride>> Handle(ReserveDriverCommand request, CancellationToken cancellationToken)
         {
             var ride = await _rideRepository.GetByIdAsync(request.RideId);
 
             if (ride == null)
             {
-                return Result.Failure<Guid>(RideErrors.NotFound);
+                return Result.Failure<Ride>(RideErrors.NotFound);
             }
 
           
 
             try
             {
-                var pickUpTime = _apiService.PredictWaitingTime(ride.StartAddress.Value, ride.EndAddress.Value);
+                var waitingTime = _apiService.PredictWaitingTime(ride.StartAddress.Value, ride.EndAddress.Value);
 
-                ride.PredictedTime = new PredictedTime(pickUpTime);
+                ride.WaitingTime = new WaitingTime(waitingTime);
             }
             catch
             {
-                return Result.Failure<Guid>(new Error("ApiService.Error", "Too many requests"));
+                return Result.Failure<Ride>(new Error("ApiService.Error", "Too many requests"));
             }
 
             //ride = Ride.Reserve(ride);
@@ -55,7 +55,7 @@ namespace Taxi.Application.Rides.ReserveRide
             
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            return Result.Success(ride.Id);
+            return Result.Success(ride);
         }
     }
 }
