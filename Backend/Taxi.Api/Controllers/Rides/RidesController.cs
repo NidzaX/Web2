@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Taxi.Application.Dto;
 using Taxi.Application.Rides.CreateRide;
+using Taxi.Application.Rides.GetAllRides;
+using Taxi.Application.Rides.GetAvailableRides;
+using Taxi.Application.Rides.GetCompletedRides;
+using Taxi.Application.Rides.GetUserRides;
 using Taxi.Application.Rides.ReserveRide;
 using Taxi.Domain.Abstractions;
 using Taxi.Domain.Rides;
@@ -23,6 +27,7 @@ namespace Taxi.Api.Controllers.Rides
         }
 
         [HttpPost("createRide")]
+        [Authorize(Roles = "user")]
         public async Task<IActionResult> CreateRide([FromBody] CreateRideDto dto, CancellationToken cancellationToken)
         {
             Console.WriteLine($"Received DTO: {JsonConvert.SerializeObject(dto)}");
@@ -53,7 +58,7 @@ namespace Taxi.Api.Controllers.Rides
         }
 
         [HttpPost("reserveRide")]
- //       [Authorize(Roles = "driver")]
+        [Authorize(Roles = "driver")]
         public async Task<IActionResult> ReserveRide([FromBody] ReserveRideDto dto, CancellationToken cancellationToken)
         {
             Console.WriteLine($"Received RideId: {dto.RideId}");
@@ -71,25 +76,84 @@ namespace Taxi.Api.Controllers.Rides
             return Ok(result.Value);
         }
 
-        //[HttpGet("getAllRides")]
-        //[Authorize(Roles = "admin")]
-        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
-        //{
-        //    return Ok();
-        //}
+        [HttpGet("getAllRides")]
+        [Authorize(Roles = "admin")]
+        public async Task<IActionResult> GetAllRides(CancellationToken cancellationToken)
+        {
+            var query = new GetAllRidesQuery();
 
-        //[HttpPost("addRides")]
-        //[Authorize(Roles = "driver")]
-        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
-        //{
-        //    return Ok();
-        //}
+            Result<List<GetAllRidesDto>> result = await _sender.Send(query, cancellationToken);
 
-        //[HttpPost("getAllRidesUser")]
-        //[Authorize(Roles = "user")]
-        //public async Task<IActionResult> AddRides([FromBody] AddRidesDto dto, CancellationToken cancellationToken)
-        //{
-        //    return Ok();
-        //}p
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet("getCompletedRides")]
+        [Authorize(Roles = "driver")]
+        public async Task<IActionResult> GetCompletedRides(CancellationToken cancellationToken)
+        {
+            var driverIdFromJWT = HttpContext.User.FindFirst("Id")?.Value;
+
+            if(!Guid.TryParse(driverIdFromJWT, out Guid driverId))
+            {
+                return BadRequest("Invalid driver Id");
+            }
+
+            var query = new GetCompletedRidesQuery(driverId);
+
+            Result<List<GetCompletedRidesDto>> result = await _sender.Send(query, cancellationToken);
+
+            if(result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet("getAvailableRides")]
+        [Authorize(Roles = "driver")]
+        public async Task<IActionResult> GetAvailableRides(CancellationToken cancellationToken)
+        {
+            var driverIdFromJWT = HttpContext.User.FindFirst("Id")?.Value;
+
+            var query = new GetAvailableRidesQuery();
+
+            Result<List<GetAvailableRidesDto>> result = await _sender.Send(query, cancellationToken);
+
+            if(result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet("getPreviousRides")]
+        [Authorize(Roles = "user")]
+        public async Task<IActionResult> GetPreviousRides(CancellationToken cancellationToken)
+        {
+            var userFromJWT = HttpContext.User.FindFirst("Id")?.Value;
+
+            if(!Guid.TryParse(userFromJWT, out Guid userId))
+            {
+                return BadRequest("Invalid user Id");
+            }
+
+            var query = new GetUserRidesQuery(userId);
+
+            Result<List<GetUserRideDto>> result = await _sender.Send(query, cancellationToken);
+
+            if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
     }
 }

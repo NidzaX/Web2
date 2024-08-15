@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,39 @@ namespace Taxi.Infrastructure.Repositories
         {
 
         }
+
+        public async Task<List<Ride>> GetAllRidesAsync()
+        {
+            return await DbContext
+                .Set<Ride>()
+                .ToListAsync();
+        }
+
+        public async Task<List<Ride>> GetAvailableRidesAsync()
+        {
+            return await DbContext
+                .Set<Ride>()
+                .Where(ride => ride.DriverId == null)
+                .ToListAsync();
+        }
+
+        public async Task<List<Ride>> GetCompletedRides(Guid driverId)
+        {
+            return await DbContext
+                .Set<Ride>()
+                .Where(ride => ride.DriverId == driverId)
+                .ToListAsync();
+        }
+
+        public async Task<List<Ride>> GetRidesByUserIdAsync(Guid userId)
+        {
+            return await DbContext
+                .Set<Ride>()
+                .Where(ride => ride.UserId == userId)
+                .ToListAsync();
+        }
+
+
     }
 }
 

@@ -3,6 +3,150 @@
   "WorkspaceRootPath": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getallridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getallridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\mapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\mapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\controllers\\rides\\ridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\rides\\ridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getavailablerides\\getavailableridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getavailablerides\\getavailableridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getallrides\\getallridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getallrides\\getallridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getallrides\\getallridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getallrides\\getallridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getavailablerides\\getavailableridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getavailablerides\\getavailableridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getuserrides\\getuserridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getuserrides\\getuserridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getcompletedrides\\getcompletedridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getcompletedrides\\getcompletedridesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\riderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\riderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\rides\\iriderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\rides\\iriderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getuserrides\\getuserridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getuserrides\\getuserridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\getcompletedrides\\getcompletedridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\getcompletedrides\\getcompletedridesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getcompletedridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getcompletedridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getavailableridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getavailableridesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\users\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\rides\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\rides\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\configurations\\rideconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\configurations\\rideconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getuserridedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getuserridedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\reserveride\\reservedrivercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\reserveride\\reservedrivercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\createride\\createridecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\createride\\createridecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\registeruser\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\registeruser\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\registeruser\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\registeruser\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\getuser\\getuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\getuser\\getuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\createride\\createridecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\createride\\createridecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\review\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\review\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\reviews\\addreview\\addreviewcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\reviews\\addreview\\addreviewcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,18 +163,6 @@
       "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\reviews\\addreviewrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\users\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\controllers\\rides\\ridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|solutionrelative:taxi.api\\controllers\\rides\\ridescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\reserveride\\reservedrivercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\reserveride\\reservedrivercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\reserveride\\reservedrivercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\reserveride\\reservedrivercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,32 +171,12 @@
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\reserveridedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\createride\\createridecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\createride\\createridecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\rides\\createride\\createridecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\rides\\createride\\createridecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\createridedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\createridedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\rides\\waitingtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\rides\\waitingtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\configurations\\rideconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\configurations\\rideconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\riderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\riderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\rides\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\rides\\ride.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,32 +219,12 @@
       "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\rides\\events\\rideconfirmeddomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\review\\reviewerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\review\\reviewerrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\review\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\review\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\getuser\\getuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\getuser\\getuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\review\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,28 +251,12 @@
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\registeruser\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\registeruser\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\registeruser\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.infrastructure\\data\\dateonlytypehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F1E653C-327A-4A4C-A56B-2BA4D87F6B65}|Taxi.Infrastructure\\Taxi.Infrastructure.csproj|solutionrelative:taxi.infrastructure\\data\\dateonlytypehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\getuser\\getuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\registeruser\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\registeruser\\registerusercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C63CCBE3-0324-4ABA-AC0F-3136A7A25A0F}|Taxi.Api\\Taxi.Api.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -207,10 +283,6 @@
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\verifydriver\\verifydrivercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\mapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\mapper\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.domain\\users\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64FC6884-CD07-40D6-94C7-F89E9B7FA2C2}|Taxi.Domain\\Taxi.Domain.csproj|solutionrelative:taxi.domain\\users\\usererrors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -221,10 +293,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\dto\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\dto\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|solutionrelative:taxi.application\\users\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3463876E-1247-48B2-9BCE-31D15F50DDFD}|Taxi.Application\\Taxi.Application.csproj|c:\\users\\nidza\\onedrive\\desktop\\taxi\\backend\\taxi.application\\users\\changeuserpassword\\changeuserpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -258,7 +326,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -266,33 +334,371 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "GetAvailableRidesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQuery.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQuery.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQuery.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T15:53:01.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RideRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\RideRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\RideRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\RideRepository.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\Repositories\\RideRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T04:51:01.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetAvailableRidesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQueryHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetAvailableRides\\GetAvailableRidesQueryHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T15:53:16.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetCompletedRidesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQueryHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T17:30:04.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetUserRidesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQueryHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQueryHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAIwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:49:36.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RidesController.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Rides\\RidesController.cs",
               "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Rides\\RidesController.cs",
               "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Rides\\RidesController.cs",
               "RelativeToolTip": "Taxi.Api\\Controllers\\Rides\\RidesController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwEgAAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAuwIcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-10T05:13:15.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReviewsController.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
-              "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
-              "RelativeToolTip": "Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA1wCUAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "RelativeToolTip": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAAALIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T05:14:27.948Z",
+              "WhenOpened": "2024-08-06T02:00:57.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "MapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Mapper\\MapperProfile.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Mapper\\MapperProfile.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Mapper\\MapperProfile.cs",
+              "RelativeToolTip": "Taxi.Application\\Mapper\\MapperProfile.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T05:14:27.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllRidesDto.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetAllRidesDto.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetAllRidesDto.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetAllRidesDto.cs",
+              "RelativeToolTip": "Taxi.Application\\Dto\\GetAllRidesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T18:14:36.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetAllRidesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQuery.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQuery.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQuery.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T18:16:42.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllRidesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQueryHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetAllRides\\GetAllRidesQueryHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T18:16:55.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRideRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\IRideRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\IRideRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\IRideRepository.cs",
+              "RelativeToolTip": "Taxi.Domain\\Rides\\IRideRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:56:29.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetUserRidesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQuery.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQuery.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQuery.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetUserRides\\GetUserRidesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:49:23.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetCompletedRidesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQuery.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQuery.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQuery.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\GetCompletedRides\\GetCompletedRidesQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T17:29:51.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetCompletedRidesDto.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetCompletedRidesDto.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetCompletedRidesDto.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetCompletedRidesDto.cs",
+              "RelativeToolTip": "Taxi.Application\\Dto\\GetCompletedRidesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T17:26:25.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Users\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Domain\\Users\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Users\\IUserRepository.cs",
+              "RelativeToolTip": "Taxi.Domain\\Users\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T17:34:07.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAvailableRidesDto.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetAvailableRidesDto.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetAvailableRidesDto.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetAvailableRidesDto.cs",
+              "RelativeToolTip": "Taxi.Application\\Dto\\GetAvailableRidesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T17:28:16.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserDto.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetUserDto.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserDto.cs",
+              "RelativeToolTip": "Taxi.Application\\Dto\\GetUserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T06:23:27.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Ride.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Ride.cs",
+              "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\Ride.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Ride.cs",
+              "RelativeToolTip": "Taxi.Domain\\Rides\\Ride.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:24:44.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RideConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T11:22:07.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetUserRideDto.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserRideDto.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetUserRideDto.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserRideDto.cs",
+              "RelativeToolTip": "Taxi.Application\\Dto\\GetUserRideDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:46:26.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReserveDriverCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T08:34:52.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateRideCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T11:19:00.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterUserCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T04:16:29.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwEcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:53:59.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegisterUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAQwFkAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T04:16:20.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Taxi.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Program.cs",
+              "RelativeToolTip": "Taxi.Api\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvxcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T13:51:52.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetUserQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:43:39.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "CreateRideCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\CreateRide\\CreateRideCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommand.cs",
@@ -300,11 +706,103 @@
               "RelativeToolTip": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T08:15:26.553Z"
+              "WhenOpened": "2024-08-10T08:15:26.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:52:42.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:35:29.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:18:25.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Taxi.Infrastructure\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Taxi.Infrastructure\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T11:23:15.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "Taxi.Domain\\Review\\IReviewRepository.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\IReviewRepository.cs",
+              "RelativeToolTip": "Taxi.Domain\\Review\\IReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:31:40.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GetUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
+              "RelativeDocumentMoniker": "Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
+              "RelativeToolTip": "Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:43:38.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Users\\User.cs",
+              "RelativeDocumentMoniker": "Taxi.Domain\\Users\\User.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Users\\User.cs",
+              "RelativeToolTip": "Taxi.Domain\\Users\\User.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:44:14.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Configurations\\UserConfiguration.cs",
@@ -316,20 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
-              "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Users\\UsersController.cs",
-              "RelativeToolTip": "Taxi.Api\\Controllers\\Users\\UsersController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAwwI0AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T02:00:57.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 39,
               "Title": "AddReviewRequest.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Reviews\\AddReviewRequest.cs",
               "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Reviews\\AddReviewRequest.cs",
@@ -337,12 +822,11 @@
               "RelativeToolTip": "Taxi.Api\\Controllers\\Reviews\\AddReviewRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T05:22:41.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T05:22:41.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 36,
               "Title": "AddReviewCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Reviews\\AddReview\\AddReviewCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Reviews\\AddReview\\AddReviewCommand.cs",
@@ -355,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 37,
               "Title": "AddReviewCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Reviews\\AddReview\\AddReviewCommandHandler.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Reviews\\AddReview\\AddReviewCommandHandler.cs",
@@ -363,24 +847,23 @@
               "RelativeToolTip": "Taxi.Application\\Reviews\\AddReview\\AddReviewCommandHandler.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAQwBsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T08:42:01.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T08:42:01.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateRideCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
-              "RelativeToolTip": "Taxi.Application\\Rides\\CreateRide\\CreateRideCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAANAAAA",
+              "DocumentIndex": 38,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
+              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
+              "RelativeToolTip": "Taxi.Api\\Controllers\\Reviews\\ReviewsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T11:19:00.294Z"
+              "WhenOpened": "2024-08-10T05:14:27.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 41,
               "Title": "ReserveRideDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\ReserveRideDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\ReserveRideDto.cs",
@@ -388,25 +871,11 @@
               "RelativeToolTip": "Taxi.Application\\Dto\\ReserveRideDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:47:21.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T06:47:21.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReserveDriverCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
-              "RelativeToolTip": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommandHandler.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T08:34:52.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 40,
               "Title": "ReserveDriverCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommand.cs",
@@ -414,12 +883,11 @@
               "RelativeToolTip": "Taxi.Application\\Rides\\ReserveRide\\ReserveDriverCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T13:50:30.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T13:50:30.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 42,
               "Title": "CreateRideDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\CreateRideDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\CreateRideDto.cs",
@@ -431,31 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RideRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\RideRepository.cs",
-              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\RideRepository.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\RideRepository.cs",
-              "RelativeToolTip": "Taxi.Infrastructure\\Repositories\\RideRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T04:51:01.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Ride.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Ride.cs",
-              "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\Ride.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Ride.cs",
-              "RelativeToolTip": "Taxi.Domain\\Rides\\Ride.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAqwKMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T05:24:44.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 43,
               "Title": "WaitingTime.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\WaitingTime.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\WaitingTime.cs",
@@ -467,19 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RideConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
-              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
-              "RelativeToolTip": "Taxi.Infrastructure\\Configurations\\RideConfiguration.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAqwB8AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T11:22:07.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 45,
               "Title": "PricingService.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\PricingService.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\PricingService.cs",
@@ -491,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 46,
               "Title": "PredictedTime.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\PredictedTime.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\PredictedTime.cs",
@@ -503,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 48,
               "Title": "IApiService.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Abstractions\\Api\\IApiService.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Abstractions\\Api\\IApiService.cs",
@@ -515,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 49,
               "Title": "Review.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\Review.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Review\\Review.cs",
@@ -527,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 47,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\DependencyInjection.cs",
@@ -539,7 +971,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 77,
               "Title": "20240810113131_Fixing driverId constraint.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Migrations\\20240810113131_Fixing driverId constraint.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Migrations\\20240810113131_Fixing driverId constraint.cs",
@@ -551,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 50,
               "Title": "RideCompletedDomainEvent.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Events\\RideCompletedDomainEvent.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\Events\\RideCompletedDomainEvent.cs",
@@ -563,7 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 52,
               "Title": "RideStatus.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\RideStatus.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\RideStatus.cs",
@@ -575,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 51,
               "Title": "Rating.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\Rating.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Review\\Rating.cs",
@@ -587,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 53,
               "Title": "RideConfirmedDomainEvent.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\Events\\RideConfirmedDomainEvent.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\Events\\RideConfirmedDomainEvent.cs",
@@ -599,19 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Taxi.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "Taxi.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAACQAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:18:25.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 54,
               "Title": "ReviewErrors.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\ReviewErrors.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Review\\ReviewErrors.cs",
@@ -623,31 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Taxi.Infrastructure\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Taxi.Infrastructure\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:23:15.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ReviewRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
-              "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
-              "RelativeToolTip": "Taxi.Infrastructure\\Repositories\\ReviewRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T05:35:29.644Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 55,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Repositories\\Repository.cs",
@@ -659,31 +1055,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IReviewRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\IReviewRepository.cs",
-              "RelativeDocumentMoniker": "Taxi.Domain\\Review\\IReviewRepository.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\IReviewRepository.cs",
-              "RelativeToolTip": "Taxi.Domain\\Review\\IReviewRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T05:31:40.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GetUserQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
-              "RelativeToolTip": "Taxi.Application\\Users\\GetUser\\GetUserQueryHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvxIAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:43:39.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 56,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Review\\Comment.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Review\\Comment.cs",
@@ -695,7 +1067,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 78,
               "Title": "20240810055239_updating review configuraton.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Migrations\\20240810055239_updating review configuraton.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Migrations\\20240810055239_updating review configuraton.cs",
@@ -707,7 +1079,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 58,
               "Title": "EditUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\EditUser\\EditUserCommandHandler.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\EditUser\\EditUserCommandHandler.cs",
@@ -719,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 62,
               "Title": "DateOnlyTypeHandler.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Data\\DateOnlyTypeHandler.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Data\\DateOnlyTypeHandler.cs",
@@ -731,7 +1103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 57,
               "Title": "RideErrors.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Rides\\RideErrors.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Rides\\RideErrors.cs",
@@ -743,19 +1115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "RegisterUserCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "RelativeToolTip": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAgwFkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T04:16:20.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 61,
               "Title": "RegisterUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommand.cs",
@@ -767,7 +1127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 59,
               "Title": "EditUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\EditUser\\EditUserCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\EditUser\\EditUserCommand.cs",
@@ -779,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 60,
               "Title": "UserEditDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\UserEditDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\UserEditDto.cs",
@@ -791,7 +1151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 63,
               "Title": "RegisterRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\RegisterRequestDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\RegisterRequestDto.cs",
@@ -803,43 +1163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "GetUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserDto.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GetUserDto.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GetUserDto.cs",
-              "RelativeToolTip": "Taxi.Application\\Dto\\GetUserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T06:23:27.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "GetUserQuery.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
-              "RelativeToolTip": "Taxi.Application\\Users\\GetUser\\GetUserQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T03:43:38.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "RegisterUserCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
-              "RelativeToolTip": "Taxi.Application\\Users\\RegisterUser\\RegisterUserCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T04:16:29.113Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 76,
               "Title": "20240809075324_x.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Infrastructure\\Migrations\\20240809075324_x.cs",
               "RelativeDocumentMoniker": "Taxi.Infrastructure\\Migrations\\20240809075324_x.cs",
@@ -851,7 +1175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 64,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Taxi.Api\\Properties\\launchSettings.json",
@@ -863,7 +1187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 65,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Taxi.Api\\appsettings.json",
@@ -875,7 +1199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 66,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Taxi.Api\\appsettings.Development.json",
@@ -887,7 +1211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 67,
               "Title": "RegisterUserGoogleDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\RegisterUserGoogleDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\RegisterUserGoogleDto.cs",
@@ -899,7 +1223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 68,
               "Title": "LoginRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\LoginRequestDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\LoginRequestDto.cs",
@@ -911,7 +1235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 69,
               "Title": "VerifyDriverCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\VerifyDriver\\VerifyDriverCommandHandler.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\VerifyDriver\\VerifyDriverCommandHandler.cs",
@@ -923,19 +1247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "MapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Mapper\\MapperProfile.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Mapper\\MapperProfile.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Mapper\\MapperProfile.cs",
-              "RelativeToolTip": "Taxi.Application\\Mapper\\MapperProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T05:14:27.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 70,
               "Title": "UserErrors.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Domain\\Users\\UserErrors.cs",
               "RelativeDocumentMoniker": "Taxi.Domain\\Users\\UserErrors.cs",
@@ -947,7 +1259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 71,
               "Title": "ChangeUserPasswordCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommandHandler.cs",
@@ -959,7 +1271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 72,
               "Title": "GoogleLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Dto\\GoogleLoginDto.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Dto\\GoogleLoginDto.cs",
@@ -971,19 +1283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "LoginUserCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
-              "ToolTip": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
-              "RelativeToolTip": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T01:53:59.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 73,
               "Title": "ChangeUserPasswordCommand.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordCommand.cs",
@@ -995,7 +1295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 74,
               "Title": "ChangeUserPasswordValidator.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\ChangeUserPassword\\ChangeUserPasswordValidator.cs",
@@ -1007,7 +1307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 75,
               "Title": "LoginUserCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\nidza\\OneDrive\\Desktop\\Taxi\\Backend\\Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
               "RelativeDocumentMoniker": "Taxi.Application\\Users\\LogInUser\\LoginUserCommandValidator.cs",
