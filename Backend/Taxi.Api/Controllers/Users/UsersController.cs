@@ -1,19 +1,16 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
-using Taxi.Application.Dto;
-using Taxi.Application.Users.ChangeUserPassword;
-using Taxi.Application.Users.Commands;
-using Taxi.Application.Users.EditUser;
-using Taxi.Application.Users.GetUser;
-using Taxi.Application.Users.GoogleLogin;
-using Taxi.Application.Users.LogInUser;
-using Taxi.Application.Users.VerifyDriver;
+using Taxi.Application.Dto.Commands;
+using Taxi.Application.Dto.Queries;
+using Taxi.Application.Users.Commands.ChangeUserPassword;
+using Taxi.Application.Users.Commands.EditUser;
+using Taxi.Application.Users.Commands.GoogleLogin;
+using Taxi.Application.Users.Commands.LogInUser;
+using Taxi.Application.Users.Commands.RegisterUser;
+using Taxi.Application.Users.Commands.VerifyDriver;
+using Taxi.Application.Users.Queries.GetUser;
 using Taxi.Domain.Abstractions;
-using Taxi.Domain.Users;
 
 namespace Taxi.Api.Controllers.Users
 {

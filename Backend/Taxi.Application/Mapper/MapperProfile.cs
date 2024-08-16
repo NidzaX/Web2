@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Taxi.Application.Dto;
+using Taxi.Application.Dto.Queries;
 using Taxi.Domain.Rides;
 using Taxi.Domain.Users;
 

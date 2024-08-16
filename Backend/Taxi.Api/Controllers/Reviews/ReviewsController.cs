@@ -1,10 +1,8 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Taxi.Application.Reviews.AddReview;
-using Taxi.Application.Users.Commands;
 using Taxi.Domain.Abstractions;
-using Taxi.Application.Reviews.CalculateReview;
+using Taxi.Application.Reviews.Commands.CalculateReview;
+using Taxi.Application.Reviews.Commands.AddReview;
 
 namespace Taxi.Api.Controllers.Reviews
 {

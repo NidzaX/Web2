@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Taxi.Application.Abstractions.Api;
-using Taxi.Application.Reviews.CalculateReview;
+using Taxi.Application.Reviews.Commands.CalculateReview;
 using Taxi.Domain.Abstractions;
 using Taxi.Domain.Review;
 using Taxi.Domain.Rides;

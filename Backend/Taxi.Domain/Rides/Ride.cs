@@ -107,6 +107,17 @@ namespace Taxi.Domain.Rides
         //    Status = status;
         //}
 
+        public void AssignDriver(Guid driverId)
+        {
+            if (DriverId != null)
+            {
+                throw new InvalidOperationException("Ride is already assigned to a driver.");
+            }
+
+            DriverId = driverId;
+        }
+
+
         public Result Confirm(DateTime utcnow)
         {
             if (Status != RideStatus.Reserved)

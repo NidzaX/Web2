@@ -31,6 +31,13 @@ namespace Taxi.Infrastructure.Repositories
                 .ToListAsync();
         }
 
+        public async Task<Ride?> GetAvailableRideByIdAsync(Guid rideId)
+        {
+            return await DbContext
+                .Set<Ride>()
+                .FirstOrDefaultAsync(ride => ride.Id == rideId && ride.DriverId == null);
+        }
+
         public async Task<List<Ride>> GetCompletedRides(Guid driverId)
         {
             return await DbContext
@@ -46,8 +53,5 @@ namespace Taxi.Infrastructure.Repositories
                 .Where(ride => ride.UserId == userId)
                 .ToListAsync();
         }
-
-
     }
 }
-

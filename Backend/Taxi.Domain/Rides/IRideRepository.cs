@@ -13,6 +13,8 @@ namespace Taxi.Domain.Rides
         Task<List<Ride>> GetAvailableRidesAsync();
         Task<List<Ride>> GetAllRidesAsync();
         Task<List<Ride>> GetCompletedRides(Guid driverId);
+        Task<Ride> GetAvailableRideByIdAsync(Guid rideId);
+
         void Add(Ride rides);
         void Update(Ride rides);
     }

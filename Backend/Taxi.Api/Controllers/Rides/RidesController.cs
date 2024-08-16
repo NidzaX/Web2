@@ -1,15 +1,16 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Taxi.Application.Dto;
-using Taxi.Application.Rides.CreateRide;
-using Taxi.Application.Rides.GetAllRides;
-using Taxi.Application.Rides.GetAvailableRides;
-using Taxi.Application.Rides.GetCompletedRides;
-using Taxi.Application.Rides.GetUserRides;
-using Taxi.Application.Rides.ReserveRide;
+using Taxi.Application.Dto.Commands;
+using Taxi.Application.Dto.Queries;
+using Taxi.Application.Rides.Commands.CreateRide;
+using Taxi.Application.Rides.Commands.ReserveRide;
+using Taxi.Application.Rides.Commands.ReserveRideByDriver;
+using Taxi.Application.Rides.Queries.GetAllRides;
+using Taxi.Application.Rides.Queries.GetAvailableRides;
+using Taxi.Application.Rides.Queries.GetCompletedRides;
+using Taxi.Application.Rides.Queries.GetUserRides;
 using Taxi.Domain.Abstractions;
 using Taxi.Domain.Rides;
 
@@ -58,7 +59,7 @@ namespace Taxi.Api.Controllers.Rides
         }
 
         [HttpPost("reserveRide")]
-        [Authorize(Roles = "driver")]
+        [Authorize(Roles = "user")]
         public async Task<IActionResult> ReserveRide([FromBody] ReserveRideDto dto, CancellationToken cancellationToken)
         {
             Console.WriteLine($"Received RideId: {dto.RideId}");
@@ -69,6 +70,24 @@ namespace Taxi.Api.Controllers.Rides
             Result<Ride> result = await _sender.Send(command, cancellationToken);
 
             if (result.IsFailure)
+            {
+                return BadRequest(result.Error);
+            }
+
+            return Ok(result.Value);
+        }
+
+        [HttpPost("reserveRideByDriver")]
+        [Authorize(Roles = "driver")]
+        public async Task<IActionResult> ReserveRideByDriver([FromBody] ReserveRideByDriverDto dto, CancellationToken cancellationToken)
+        {
+            var driverIdFromJWT = Guid.Parse(HttpContext.User.FindFirst("Id")?.Value);
+
+            var command = new ReserveRideByDriverCommand(dto.RideId, driverIdFromJWT);
+
+            Result<Ride> result = await _sender.Send(command, cancellationToken);
+
+            if(result.IsFailure)
             {
                 return BadRequest(result.Error);
             }
