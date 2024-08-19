@@ -23,14 +23,14 @@ const Login = () => {
                 localStorage.setItem('token', JSON.stringify(data));
 
                 // Декодирање JWT и добијање типа корисника
-                const base64Url = data.accessToken.split('.')[1];
-                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-                const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) => {
-                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                }).join(''));
-                const payload = JSON.parse(jsonPayload);
-                const userType = payload['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
-                console.log('User type:', userType);
+                // const base64Url = data.accessToken.split('.')[1];
+                // const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                // const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) => {
+                //     return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                // }).join(''));
+                // const payload = JSON.parse(jsonPayload);
+                // const userType = payload['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+                // console.log('User type:', userType);
 
                 // Redirektuj korisnika nakon prijave
                 navigate('/home'); // Možeš promeniti rutu prema potrebi

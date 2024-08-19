@@ -1,12 +1,15 @@
 
 import Header from "../components/general/Header";
 import { Outlet } from "react-router-dom";
+import { TimerProvider } from "../components/general/Context";
 
 function HomePage(){
     return (
     <>
-        <Header/>
-        <Outlet/>
+        <TimerProvider>
+            <Header />
+            <Outlet />
+        </TimerProvider>
     </>
 
     )

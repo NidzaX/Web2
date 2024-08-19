@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { createRide } from '../../services/Rides/CreateRide/CreateRide';
 import { reserveRide } from '../../services/Rides/ReserveRide/ReserveRide';
+import { TimerContext } from '../general/Context';
+import { useNavigate } from 'react-router-dom';
 
 const CreateRide = () => {
     const [startAddress, setStartAddress] = useState('');
     const [endAddress, setEndAddress] = useState('');
     const [price, setPrice] = useState(null);
     const [predictedTime, setPredictedTime] = useState(null);
-    const [rideId, setRideId] = useState(null); // Store the rideId
+    const [rideId, setRideId] = useState(null);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
-    const [waitingTime, setWaitingTime] = useState(null);
     const [isProcessing, setIsProcessing] = useState(false);
+    const { waitingTime, setWaitingTime } = useContext(TimerContext);
+    const [countdown, setCountdown] = useState(null);
+    const navigate = useNavigate();
 
     const getUserIdFromToken = () => {
         const token = localStorage.getItem('token');
@@ -68,13 +72,28 @@ const CreateRide = () => {
         try {
             const token = localStorage.getItem('token');
             const reserveResult = await reserveRide(rideId, JSON.parse(token).accessToken);
-            setWaitingTime(reserveResult.waitingTime);
+            const calculatedWaitingTime = Math.round(reserveResult.waitingTime) * 60;
+            setWaitingTime(calculatedWaitingTime); // Update waitingTime in context
+            setCountdown(calculatedWaitingTime); // Start countdown
         } catch (err) {
             setError('Failed to reserve ride. Please try again.');
         } finally {
             setIsProcessing(false);
         }
     };
+
+    useEffect(() => {
+        let timer;
+        if (countdown > 0) {
+            timer = setInterval(() => {
+                setCountdown(prevCountdown => prevCountdown - 1);
+            }, 1000);
+        } else if (countdown === 0) {
+            clearInterval(timer);
+            navigate(`/home/AddReview`);
+        }
+        return () => clearInterval(timer);
+    }, [countdown, navigate, rideId]);
 
     return (
         <div>
@@ -112,7 +131,12 @@ const CreateRide = () => {
                 </button>
             )}
 
-            {waitingTime !== null && <p>Waiting Time: {waitingTime} minutes</p>}
+            {/* Countdown Timer */}
+            {countdown !== null && countdown > 0 && (
+                <div>
+                    <h3>Waiting Time: {Math.floor(countdown / 60)}:{('0' + (countdown % 60)).slice(-2)}</h3>
+                </div>
+            )}
         </div>
     );
 };

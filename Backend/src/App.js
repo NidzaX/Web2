@@ -13,7 +13,10 @@ import PrivateRouteA from './components/general/PrivateRouteA';
 import CreateRide from './components/User/NewRide';
 import HomePage from './pages/HomePage';
 import ReviewRide from './components/User/AddReview';
-
+import PreviousRides from './components/User/GetPreviousRides';
+import GetAvailableRidesComponent from './components/Driver/GetAvailableRides/GetAvailableRides';
+import GetCompletedRidesComponent from './components/Driver/GetCompletedRides/GetCompletedRides';
+import AllRides from './components/admin/GetAllRides/GetAllRides';
 function App() {
     return (
         <div>
@@ -25,14 +28,18 @@ function App() {
                 <Route path="/verification" element={<VerifyDriverComponent />} />
                 <Route path="Profile/:userId" element={<GetUserComponent />} />
                 <Route path='/home' element={<PrivateRoute allowedRoles={['admin', 'driver', 'user']}><HomePage /></PrivateRoute>}>
+                    <Route path="GetPreviousRides" element={<PreviousRides/>} />
                     <Route path="ChangePassword" element={<ChangePassword />} />
                     <Route path="EditProfile" element={<EditUserProfile />} />
                     <Route path="NewRide" element={<CreateRide />} />
                     <Route path="AddReview" element={<ReviewRide />} /> 
+                    <Route path="GetAvailableRides" element={<GetAvailableRidesComponent />} />
+                    <Route path="GetCompletedRides" element={<GetCompletedRidesComponent />} />
+                    <Route path="GetAllRides" element={<AllRides/>}/>
+                    <Route path="VerifyDriver" element={<VerifyDriverComponent/>}/>
                 </Route>
             </Routes>
         </div>
     );
 }
-
 export default App;

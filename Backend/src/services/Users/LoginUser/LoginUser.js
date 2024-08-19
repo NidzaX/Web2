@@ -8,7 +8,7 @@ export const loginUser = async (username, password) => {
             Username: username,
             Password: password
         });
-        return response.data;
+        return await response.data;
         
     }catch(error) {
         return { accessToken: 'Error', message: error.response?.data?.message || 'Login failed' };

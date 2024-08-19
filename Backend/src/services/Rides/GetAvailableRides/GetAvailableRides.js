@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-export const addReview = async () => {
+export const getAvailableRides = async () => {
     try {
         const token = localStorage.getItem('token');
         if (!token) {
             throw new Error('No token found in local storage');
         }
         const trueToken = JSON.parse(token).accessToken;    
-        const response = await axios.post('https://localhost:44325/api/reviews', {
+        const response = await axios.get('https://localhost:44325/api/rides/getAvailableRides', {
             headers: {
                 Authorization: `Bearer ${trueToken}`
             }

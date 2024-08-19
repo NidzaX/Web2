@@ -6,7 +6,6 @@ export default function PrivateRoute({ children, allowedRoles }) {
     if (!tokenString) {
         return <Navigate to='/login' />;
     }
-
     const token = JSON.parse(tokenString);
     const base64Url = token.accessToken.split('.')[1];
     const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
